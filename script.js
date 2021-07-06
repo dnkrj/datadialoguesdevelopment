@@ -6,6 +6,10 @@ document.getElementById("buttonnext").addEventListener("click", () => {
   document.body.classList.add("donenext");
 }, false);
 
+document.getElementById("bubble1").addEventListener("click", () => {
+  document.body.classList.add("done1");
+}, false);
+
 console.clear();
 
 var canvas = document.createElement('canvas'),
@@ -14,7 +18,7 @@ var canvas = document.createElement('canvas'),
 var width = canvas.width = window.innerWidth,
     height = canvas.height = window.innerHeight;
 
-window.addEventListener('resize',function(){
+window.addEventListener('resize', function(){
   width = canvas.width = window.innerWidth;
   height = canvas.height = window.innerHeight;
 });

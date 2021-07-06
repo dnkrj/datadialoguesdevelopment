@@ -88,6 +88,10 @@ body.donenext #explaination {
   padding: 0;
 }
 
+body.done1 nav {
+  display: none;
+}
+
 canvas {
   display: none;
   position: fixed;
