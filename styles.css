@@ -1,0 +1,63 @@
+body {
+  background: #151c50;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  font: 600 70px sans-serif;
+  margin: 30px;
+}
+
+p {
+  color: white;
+  font: 400 20px monospace;
+  margin: 20px;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header > div {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+a.primary, a.secondary {
+  display: inline-block;
+  font: 400 20px sans-serif;
+  text-decoration: none;
+  margin: 20px;
+}
+
+a.primary {
+  color: white;
+  background: rgb(128, 145, 246);
+  padding: 20px;
+}
+
+a.secondary {
+  color: rgb(128, 145, 246);
+  padding: 0;
+}
+
+#explaination {
+  display: none;
+}
+
+canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
