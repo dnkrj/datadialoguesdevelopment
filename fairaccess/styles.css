@@ -12,9 +12,12 @@ ol {
 li {
   font: 300 30px serif;
   margin: 30px;
-  width: 80%;
+  max-width: 80%;
   display: inline-block;
   box-sizing: border-box;
+  background: yellow;
+  padding: 50px;
+  border-radius: 100px;
 }
 
 li::before {
@@ -32,6 +35,10 @@ li.received {
 li.sent {
   float: right;
   text-align: right;
+}
+
+li.choice {
+  background: cyan;
 }
 
 li a {

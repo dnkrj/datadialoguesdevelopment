@@ -65,7 +65,12 @@ let showMessage = (i) => {
 	li.scrollIntoView({behavior: "smooth"});
 
 	if (!message.pause) {
-		setTimeout(() => showMessage(message.next || i + 1), 500);
+		let showNext = () => showMessage(message.next || i + 1);
+		if (!message.choice) {
+			setTimeout(showNext, 500);
+		} else {
+			showNext();
+		}
 	};
 }
 
