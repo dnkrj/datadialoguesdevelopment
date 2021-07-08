@@ -62,8 +62,11 @@ let showMessage = (i) => {
 	}
 	li.classList.add(message.received ? "received" : "sent");
 	ol.appendChild(li);
-	if (!message.pause) showMessage(message.next || i + 1);
 	li.scrollIntoView({behavior: "smooth"});
+
+	if (!message.pause) {
+		setTimeout(() => showMessage(message.next || i + 1), 500);
+	};
 }
 
 showMessage(0)
