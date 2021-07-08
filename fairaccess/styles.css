@@ -1,0 +1,41 @@
+ol, li {
+  padding: 0;
+  margin: 0;
+}
+
+ol {
+  max-width: 40%;
+  list-style: none;
+  margin: auto;
+}
+
+li {
+  font: 300 30px serif;
+  margin: 30px;
+  width: 80%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+li::before {
+  content: "“";
+}
+
+li::after {
+  content: "”";
+}
+
+li.received {
+  opacity: 0.6;
+}
+
+li.sent {
+  float: right;
+  text-align: right;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+  border-bottom: solid 1px black;
+}
