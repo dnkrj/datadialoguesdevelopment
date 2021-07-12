@@ -67,7 +67,7 @@ let showMessage = (i) => {
 	if (!message.pause) {
 		let showNext = () => showMessage(message.next || i + 1);
 		if (!message.choice) {
-			setTimeout(showNext, 500);
+			setTimeout(showNext, 2000);
 		} else {
 			showNext();
 		}
