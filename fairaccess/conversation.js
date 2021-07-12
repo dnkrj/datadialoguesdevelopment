@@ -50,7 +50,7 @@ let showMessage = (i) => {
 	if (message.choice) {
 		let a = document.createElement("a");
 		a.href = "javascript:;";
-		a.addEventListener("click", () => {
+		li.addEventListener("click", () => {
 			document.querySelectorAll('.choice').forEach(e => e.remove());
 			showMessage(message.choice)
 		}, false);
@@ -71,6 +71,8 @@ let showMessage = (i) => {
 		} else {
 			showNext();
 		}
+	} else if(!message.choice) {
+		document.body.classList.remove("inprogress");
 	};
 }
 
