@@ -51,8 +51,13 @@ let showMessage = (i) => {
 		let a = document.createElement("a");
 		a.href = "javascript:;";
 		li.addEventListener("click", () => {
-			document.querySelectorAll('.choice').forEach(e => e.remove());
-			showMessage(message.choice)
+			document.querySelectorAll('.choice').forEach((e) => {
+				e.classList.add(e == li ? "hide" : "quickhide")
+			});
+			setTimeout(() => {
+				showMessage(message.choice);
+				document.querySelectorAll('.choice').forEach(e => e.remove());
+			}, 500)
 		}, false);
 		a.appendChild(document.createTextNode(message.text));
 		li.appendChild(a);
