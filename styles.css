@@ -1,6 +1,11 @@
 body {
   background: #151c50;
   margin: 0;
+  transition: opacity 0.3s;
+}
+
+body.transitioning {
+  opacity: 0;
 }
 
 h1 {
