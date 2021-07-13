@@ -1,0 +1,238 @@
+body {
+  background: #171717;
+  margin: 0;
+  transition: all 2s;
+}
+
+body.doneenter {
+  background: white;
+}
+
+body.transitioning {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+header, nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.doneenter header {
+  animation: fadeout 0.3s forwards;
+  pointer-events: none;
+}
+
+h1 {
+  color: white;
+  font: 600 80px sans-serif;
+  margin: 30px;
+}
+
+h2 {
+  color: white;
+  font: 400 25px sans-serif;
+  margin: 30px;
+}
+
+p {
+  color: white;
+  font: 300 18px sans-serif;
+  margin: 20px;
+  max-width: 600px;
+}
+
+header button {
+  box-shadow: 3px 3px 0px 0px white;
+}
+
+#map {
+  z-index: 1;
+  height: 60vh;
+  width: 60vh;
+  position: absolute;
+  padding: 0;
+}
+
+#framework {
+  height: 80vh;
+  width: 80vw;
+  position: absolute;
+  padding: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+body.doneenter.showframework #framework {
+  opacity: 1;
+}
+
+nav li {
+  list-style: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 1s ;
+}
+
+nav li a {
+  color: white;
+  font: 500 20px sans-serif;
+  text-decoration: none;
+  margin: 40px;
+}
+
+nav li a,
+nav button {
+  display: none;
+}
+
+body.doneenter nav li a,
+body.doneenter nav button {
+  display: inline-block;
+  animation: fadein 2s;
+}
+
+body.doneenter li {
+  transform: translate(0, 0) !important;
+}
+
+nav li:hover,
+nav li:focus {
+  transform: scale(1.05) !important;
+  z-index: 1;
+}
+
+#bubble1 {
+  left: 0%;
+  top: 14%;
+  width: 42%;
+  height: 38%;
+  background-image: url("images/solid1.png");
+  transform: translate(-75%, -75%);
+}
+
+body:not(.doneenter) #bubble1,
+body.filter #bubble1,
+#bubble1:hover,
+#bubble1:focus {
+  background-image: url("images/1.png");
+}
+
+#bubble2 {
+  left: 18%;
+  top: 57%;
+  width: 43%;
+  height: 35%;
+  background-image: url("images/solid2.png");
+  transform: translate(-200%, 100%);
+}
+
+
+body:not(.doneenter) #bubble2,
+#bubble2:hover,
+#bubble2:focus {
+  background-image: url("images/2.png");
+}
+
+#bubble3 {
+  left: 63%;
+  top: 75%;
+  width: 37%;
+  height: 25%;
+  background-image: url("images/solid3.png");
+  transform: translate(-325%, 0);
+}
+
+
+body:not(.doneenter) #bubble3,
+body.filter #bubble3,
+#bubble3:hover,
+#bubble3:focus {
+  background-image: url("images/3.png");
+}
+
+#bubble4 {
+  left: 64%;
+  top: 32%;
+  width: 30%;
+  height: 27%;
+  background-image: url("images/solid4.png");
+  transform: translate(200%, 150%)
+}
+
+
+body:not(.doneenter) #bubble4,
+#bubble4:hover,
+#bubble4:focus {
+  background-image: url("images/4.png");
+}
+
+#bubble5 {
+  left: 33%;
+  top: 0%;
+  width: 55%;
+  height: 39%;
+  background-image: url("images/solid5.png");
+  transform: translate(50%, -100%)
+}
+
+
+body:not(.doneenter) #bubble5,
+body.filter #bubble5,
+#bubble5:hover,
+#bubble5:focus {
+  background-image: url("images/5.png");
+}
+
+#bubble6,
+#bubble7 {
+  display: none;
+}
+
+nav button {
+  position: absolute;
+}
+
+nav button#buttontogglesound {
+  top: 50px;
+  left: 50px;
+}
+
+nav button#buttonfilter {
+  top: 50px;
+  right: 50px;
+}
+
+nav button#buttondownload {
+  bottom: 50px;
+  left: 50px;
+}
+
+nav button#buttontoggleframework {
+  bottom: 50px;
+  right: 50px;
+}

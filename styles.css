@@ -1,213 +1,31 @@
-body {
-  background: #151c50;
+body, ol, ul, li, h1, h2, h3, h4 {
+  padding: 0;
   margin: 0;
-  transition: opacity 0.3s;
 }
 
-body.transitioning {
-  opacity: 0;
-}
-
-h1 {
-  color: white;
-  font: 600 70px sans-serif;
-  margin: 30px;
-}
-
-p {
-  color: white;
-  font: 400 20px monospace;
-  margin: 20px;
-}
-
-header, nav {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-header > div {
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-a {
-  color: white;
-  display: inline-block;
-  font: 400 20px sans-serif;
-  text-decoration: none;
-  margin: 20px;
-}
-
-a.primary {
-  background: rgb(128, 145, 246);
-  padding: 20px;
-}
-
-a.secondary {
-  color: rgb(128, 145, 246);
-  padding: 0;
-}
-
-a {
-  transition: opacity 0.3s;
-}
-
-a:hover {
-  opacity: 0.8;
-}
-
-#introduction {
-  z-index: 3;
-}
-
-body.doneenter #introduction {
-  display: none;
-}
-
-#explaination {
-  z-index: 2;
-  display: none;
-}
-
-body.doneenter #explaination {
-  display: block;
-}
-
-body.donenext #explaination {
-  display: none;
-}
-
-#map {
-  z-index: 1;
-  height: 90vh;
-  width: 90vh;
-  position: relative;
-  padding: 0;
-}
-
-body.done1 nav {
-  display: none;
-}
-
-canvas {
-  display: none;
-  position: fixed;
-  top: 0;
-  z-index: -1;
-}
-
-@keyframes fadeIn { 
-  from { opacity: 0.5; } 
-}
-
-li {
+ol, ul {
   list-style: none;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  background-size: 100% 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+button {
+  background: linear-gradient(180deg, #515151, #808080);
+  color: white;
+  font: 400 18px sans-serif;
+  border: none;
+  padding: 15px 30px;
+  margin: 20px;
   text-align: center;
-  opacity: 0.8;
-  transition: all 1s ;
-
-  animation: fadeIn 1s infinite alternate;
-}
-
-body.donenext li:hover {
-  opacity: 1 !important;
-  transform: translate(-50%, -50%) scale(1.05) !important;
-}
-
-body.donenext li {
-  animation: none !important;
-  transform: translate(-50%, -50%) !important;
-  opacity: 0.8 !important;
-}
-
-li a {
-  display: none;
-}
-
-body.donenext li a {
+  text-decoration: none;
   display: inline-block;
+  cursor: pointer;
+  border-radius: 60px;
+  box-shadow: 0px 10px 20px 0px rgb(0 0 0 / 50%);
+  transition: all 0.4s;
+  box-shadow: 3px 3px 0px 0px black;
 }
 
-#bubble1 {
-  left: 19%;
-  top: 52%;
-  width: 26%;
-  height: 33%;
-  background-image: url("SVG/Asset 1.svg");
-  animation-duration: 6s;
-  transform: translate(-200%, -50%);
-}
-
-#bubble2 {
-  left: 17%;
-  top: 82%;
-  width: 34%;
-  height: 36%;
-  background-image: url("SVG/Asset 2.svg");
-  animation-duration: 7s;
-  transform: translate(-100%, 0%);
-}
-
-#bubble3 {
-  left: 86%;
-  top: 68%;
-  width: 25%;
-  height: 28%;
-  background-image: url("SVG/Asset 3.svg");
-  animation-duration: 2s;
-  transform: translate(0%, -25%);
-}
-
-#bubble4 {
-  left: 47%;
-  top: 47%;
-  width: 50%;
-  height: 48%;
-  background-image: url("SVG/Asset 4.svg");
-  animation-duration: 3s;
-  opacity: 0.25;
-}
-
-#bubble5 {
-  left: 46%;
-  top: 16%;
-  width: 60%;
-  height: 31%;
-  background-image: url("SVG/Asset 5.svg");
-  animation-duration: 4s;
-  transform: translate(-50%, -150%);
-}
-
-#bubble6 {
-  left: 62%;
-  top: 81%;
-  width: 46%;
-  height: 28%;
-  background-image: url("SVG/Asset 6.svg");
-  animation-duration: 3s;
-  transform: translate(-25%, 0%);
-}
-
-#bubble7 {
-  left: 80%;
-  top: 48%;
-  width: 40%;
-  height: 29%;
-  background-image: url("SVG/Asset 7.svg");
-  animation-duration: 2s;
-  transform: translate(0, -75%);
+button:hover,
+button:focus {
+  transform: scale(1.05);
+  outline: none;
 }

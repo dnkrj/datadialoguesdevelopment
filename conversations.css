@@ -1,0 +1,135 @@
+
+#conversation {
+  min-height: 100vh;
+}
+
+#messages {
+  width: 100vw;
+  max-width: 600px;
+  margin: 0 0 0 auto;
+  padding: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+#messages li {
+  font: 300 22px sans-serif;
+  margin: 30px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  color: rgb(243, 247, 251);
+}
+
+#messages li.received {
+  margin-right: 40%;
+  color: rgb(118, 240, 295);
+  animation: fadeindown 0.4s ease-in;
+}
+
+#messages li.sent {
+  margin-left: 40%;
+  text-align: right;
+  animation: fadeinup 0.4s ease-in;
+}
+
+#messages li.choice {
+  margin: 15px;
+  background: linear-gradient(180deg, rgb(101, 191, 157), rgb(138, 239, 194));
+  padding: 20px 30px;
+  border-radius: 60px;
+  animation: fadein 0.4s ease-in;
+  width: auto;
+  cursor: pointer;
+  box-shadow: 0px 10px 20px 0px rgb(0 0 0 / 50%);
+  transition: all 0.4s;
+}
+
+#messages li.choice.hide {
+  animation: choicesend 0.3s forwards;
+  pointer-events: none;
+}
+
+#messages li.choice.quickhide {
+  animation: fadeout 0.3s forwards;
+  pointer-events: none;
+}
+
+#messages li a {
+  color: rgb(243, 247, 251);
+  text-decoration: none;
+}
+
+#messages li.choice:hover {
+  transform: translateY(-5%) scale(1.02);
+}
+
+body.inprogress article {
+  display: none;
+}
+
+article > header,
+article > section {
+  padding: 50px;
+}
+
+article > header > *,
+article > section > *,
+article > nav > * {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+article h1 {
+  color: white;
+  font: 400 14px sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 20px auto;
+}
+
+article h2 {
+  color: white;
+  font: 300 60px sans-serif;
+  margin: 20px auto;
+}
+
+article h3 {
+  color: #0560d6;
+  font: 300 40px sans-serif;
+  margin: 40px auto 20px;
+}
+
+article h4 {
+  font: 300 30px sans-serif;
+}
+
+article li,
+article p {
+  font: 300 20px sans-serif;
+  line-height: 1.6;
+  margin: 20px auto;
+}
+
+article section li {
+  background: #E8EBF0;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px -30px;
+}
+
+article > section {
+  background: white;
+}
+
+article > nav {
+  background: #E8EBF0;
+  overflow: hidden;
+  padding: 30px 0;
+}
+
+nav ul li {
+  padding: 30px 30px 30px 30%;
+}
