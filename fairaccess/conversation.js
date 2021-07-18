@@ -57,7 +57,7 @@ let showMessage = (i) => {
 			setTimeout(() => {
 				showMessage(message.choice);
 				document.querySelectorAll('.choice').forEach(e => e.remove());
-			}, 500)
+			}, 1000)
 		}, false);
 		a.appendChild(document.createTextNode(message.text));
 		li.appendChild(a);

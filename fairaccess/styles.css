@@ -1,3 +1,7 @@
+:root {
+  --button-color: #EAE750;
+}
+
 body {
   background: #0560d6;
   background-image: url('bg.png');

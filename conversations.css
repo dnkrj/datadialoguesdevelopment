@@ -35,19 +35,19 @@
 }
 
 #messages li.choice {
+  font: 600 22px sans-serif;
   margin: 15px;
-  background: linear-gradient(180deg, rgb(101, 191, 157), rgb(138, 239, 194));
+  background: var(--button-color);
   padding: 20px 30px;
-  border-radius: 60px;
+  border-radius: 30px;
   animation: fadein 0.4s ease-in;
   width: auto;
   cursor: pointer;
-  box-shadow: 0px 10px 20px 0px rgb(0 0 0 / 50%);
   transition: all 0.4s;
 }
 
 #messages li.choice.hide {
-  animation: choicesend 0.3s forwards;
+  animation: choicesend 1s forwards;
   pointer-events: none;
 }
 
@@ -57,12 +57,17 @@
 }
 
 #messages li a {
-  color: rgb(243, 247, 251);
+  color: black;
   text-decoration: none;
 }
 
 #messages li.choice:hover {
-  transform: translateY(-5%) scale(1.02);
+  transform: translateY(-2%) scale(1.1);
+  border-radius: 80px 60px 70px 60px / 80px 90px 60px 50px;
+}
+
+#messages li.choice:last-child:hover {
+  border-radius: 100px 190px 90px 100px / 100px 100px 160px 200px;
 }
 
 body.inprogress article {
