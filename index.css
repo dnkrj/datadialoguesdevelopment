@@ -39,19 +39,23 @@ nav {
 
 body.doneenter header,
 body.doneexplore section {
-  animation: fadeout 0.3s forwards;
+  animation: fadeout 0.5s forwards;
   pointer-events: none;
 }
 
-h1 {
+header h1 {
   font-size: 60px;
 
   animation: fadeinup 0.5s ease-out backwards;
   animation-delay: 0.25s;
 }
 
-p {
-  max-width: 500px;
+header p,
+section p {
+  max-width: 550px;
+
+  font-size: 20px;
+  color: #002E56;
 
   animation: fadeinup 0.5s ease-out backwards;
   animation-delay: 1s;
@@ -119,14 +123,21 @@ nav li a {
 }
 
 nav li a,
-nav button {
+nav #navheader,
+nav #buttons button {
   display: none;
 }
 
 body.doneexplore nav li a,
-body.doneexplore nav button {
+body.doneexplore nav #navheader {
   display: inline-block;
-  animation: fadein 2s;
+  animation: fadein 2s backwards;
+}
+
+body.doneexplore #buttons button {
+  display: inline-block;
+  animation: fadeinup 0.5s backwards;
+  animation-delay: 0.75s;
 }
 
 body.doneexplore li {
@@ -148,7 +159,6 @@ nav li:focus {
   transform: translate(-75%, -75%);
 }
 
-body:not(.doneexplore) #bubble1,
 body.filter #bubble1,
 #bubble1:hover,
 #bubble1:focus {
@@ -164,8 +174,6 @@ body.filter #bubble1,
   transform: translate(-200%, 100%);
 }
 
-
-body:not(.doneexplore) #bubble2,
 #bubble2:hover,
 #bubble2:focus {
   background-image: url("images/2.png");
@@ -180,8 +188,6 @@ body:not(.doneexplore) #bubble2,
   transform: translate(-325%, 0);
 }
 
-
-body:not(.doneexplore) #bubble3,
 body.filter #bubble3,
 #bubble3:hover,
 #bubble3:focus {
@@ -197,8 +203,6 @@ body.filter #bubble3,
   transform: translate(200%, 150%)
 }
 
-
-body:not(.doneexplore) #bubble4,
 #bubble4:hover,
 #bubble4:focus {
   background-image: url("images/4.png");
@@ -213,8 +217,6 @@ body:not(.doneexplore) #bubble4,
   transform: translate(50%, -100%)
 }
 
-
-body:not(.doneexplore) #bubble5,
 body.filter #bubble5,
 #bubble5:hover,
 #bubble5:focus {
@@ -226,26 +228,54 @@ body.filter #bubble5,
   display: none;
 }
 
-nav button {
+#navheader {
   position: absolute;
-}
-
-nav button#buttontogglesound {
   top: 50px;
   left: 50px;
 }
 
-nav button#buttonfilter {
-  top: 50px;
+#buttons {
+  position: absolute;
   right: 50px;
+  bottom: 50px;
 }
 
-nav button#buttondownload {
-  bottom: 50px;
-  left: 50px;
+#buttons button {
+  width: 0;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0);
+  margin: 10px;
 }
 
-nav button#buttontoggleframework {
-  bottom: 50px;
-  right: 50px;
+body.doneexplore #buttons button:nth-child(2) {
+  animation-delay: 1s;
+}
+
+body.doneexplore #buttons button:nth-child(3) {
+  animation-delay: 1.25s;
+}
+
+body.doneexplore #buttons button:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+#buttons button:hover {
+  color: white;
+  width: auto;
+}
+
+#buttons button#buttontogglesound:hover {
+  width: 173px;
+}
+
+#buttons button#buttonfilter:hover {
+  width: 183px;
+}
+
+#buttons button#buttondownload:hover {
+  width: 237px;
+}
+
+#buttons button#buttontoggleframework:hover {
+  width: 212px;
 }
