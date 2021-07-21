@@ -43,7 +43,7 @@
 
 @keyframes fadeinup {
   from {
-    transform: translateY(20%);
+    transform: translateY(10px);
     opacity: 0;
   }
 
