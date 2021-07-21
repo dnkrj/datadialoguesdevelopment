@@ -4,10 +4,6 @@ body {
   transition: all 2s;
 }
 
-body.doneenter {
-  background: white;
-}
-
 body.transitioning {
   opacity: 0;
   transition: all 0.5s;
@@ -21,7 +17,7 @@ header, section, nav {
   right: 0;
 }
 
-header {
+header, section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,8 +26,8 @@ header {
   z-index: 2;
 }
 
-header button,
-header h1 {
+header button, header h1,
+section button, section p:first-child {
   margin-top: 100px;
 }
 
@@ -41,43 +37,44 @@ nav {
   justify-content: center;
 }
 
-body.doneenter header {
+body.doneenter header,
+body.doneexplore section {
   animation: fadeout 0.3s forwards;
   pointer-events: none;
 }
 
 h1 {
-  color: #002E56;
-  font-weight: 700;
-  font-size: 80px;
-  margin: 30px;
+  font-size: 60px;
 
   animation: fadeinup 0.5s ease-out backwards;
   animation-delay: 0.25s;
 }
 
 p {
-  color: #002E56;
-  font-weight: 500;
-  font-size: 24px;
-  margin: 20px;
-  max-width: 700px;
+  max-width: 500px;
 
   animation: fadeinup 0.5s ease-out backwards;
   animation-delay: 1s;
 }
 
-header p:nth-child(3) {
+header p:nth-child(3),
+section p:nth-child(2) {
   animation-delay: 2s;
 }
 
-header p:nth-child(4) {
+header p:nth-child(4),
+section p:nth-child(3) {
   animation-delay: 3s;
 }
 
-header button {
+header button,
+section button {
   animation: fadeinup 0.5s ease-out backwards;
   animation-delay: 4s;
+}
+
+body:not(.doneenter) section {
+  display: none;
 }
 
 #map {
@@ -98,7 +95,7 @@ header button {
   transition: opacity 0.5s;
 }
 
-body.doneenter.showframework #framework {
+body.doneexplore.showframework #framework {
   opacity: 1;
 }
 
@@ -126,13 +123,13 @@ nav button {
   display: none;
 }
 
-body.doneenter nav li a,
-body.doneenter nav button {
+body.doneexplore nav li a,
+body.doneexplore nav button {
   display: inline-block;
   animation: fadein 2s;
 }
 
-body.doneenter li {
+body.doneexplore li {
   transform: translate(0, 0) !important;
 }
 
@@ -151,7 +148,7 @@ nav li:focus {
   transform: translate(-75%, -75%);
 }
 
-body:not(.doneenter) #bubble1,
+body:not(.doneexplore) #bubble1,
 body.filter #bubble1,
 #bubble1:hover,
 #bubble1:focus {
@@ -168,7 +165,7 @@ body.filter #bubble1,
 }
 
 
-body:not(.doneenter) #bubble2,
+body:not(.doneexplore) #bubble2,
 #bubble2:hover,
 #bubble2:focus {
   background-image: url("images/2.png");
@@ -184,7 +181,7 @@ body:not(.doneenter) #bubble2,
 }
 
 
-body:not(.doneenter) #bubble3,
+body:not(.doneexplore) #bubble3,
 body.filter #bubble3,
 #bubble3:hover,
 #bubble3:focus {
@@ -201,7 +198,7 @@ body.filter #bubble3,
 }
 
 
-body:not(.doneenter) #bubble4,
+body:not(.doneexplore) #bubble4,
 #bubble4:hover,
 #bubble4:focus {
   background-image: url("images/4.png");
@@ -217,7 +214,7 @@ body:not(.doneenter) #bubble4,
 }
 
 
-body:not(.doneenter) #bubble5,
+body:not(.doneexplore) #bubble5,
 body.filter #bubble5,
 #bubble5:hover,
 #bubble5:focus {

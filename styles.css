@@ -1,4 +1,4 @@
-body, ol, ul, li, h1, h2, h3, h4 {
+body, ol, ul, li, h1, h2, h3, h4, p {
   padding: 0;
   margin: 0;
 }
@@ -7,15 +7,28 @@ ol, ul {
   list-style: none;
 }
 
-body {
-  font-family: 'Work Sans', sans-serif;
+h1 {
+  color: #002E56;
+  font-family: "Averta-Regular";
+  font-size: 36px;
+  line-height: 1.4;
+  margin: 28px;
+}
+
+p {
+  color: #002E56;
+  font-family: "Averta-Regular";
+  font-size: 18px;
+  line-height: 33px;
+  margin: 18px;
 }
 
 button {
   background: #0067C3;
   color: white;
-  font-size: 22px;
-  font-weight: 600;
+  font-family: "Averta-Regular";
+  font-size: 18px;
+  line-height: 33px;
   border: none;
   padding: 15px 30px;
   margin: 20px;

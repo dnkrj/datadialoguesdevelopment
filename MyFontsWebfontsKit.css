@@ -1,0 +1,133 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3960887, 2020-10-15T04:19:59-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Averta-Bold by Intelligent Design
+ * URL: https://www.myfonts.com/fonts/intelligent-foundry/averta/bold/
+ * 
+ * Webfont: Averta-BlackItalic by Intelligent Design
+ * URL: https://www.myfonts.com/fonts/intelligent-foundry/averta/black-italic/
+ * 
+ * Webfont: Averta-Extrabold by Intelligent Design
+ * URL: https://www.myfonts.com/fonts/intelligent-foundry/averta/extra-bold/
+ * 
+ * Webfont: Averta-BoldItalic by Intelligent Design
+ * URL: https://www.myfonts.com/fonts/intelligent-foundry/averta/bold-italic/
+ * 
+ * Webfont: Averta-Black by Intelligent Design
+ * URL: https://www.myfonts.com/fonts/intelligent-foundry/averta/black/
+ * 
+ * Webfont: Averta-ExtraboldItalic by Intelligent Design
+ * URL: https://www.myfonts.com/fonts/intelligent-foundry/averta/extra-bold-italic/
+ * 
+ * Webfont: Averta-Extrathin by Intelligent Design
+ * URL: https://www.myfonts.com/fonts/intelligent-foundry/averta/extrathin/
+ * 
+ * Webfont: Averta-ExtrathinItalic by Intelligent Design
+ * URL: https://www.myfonts.com/fonts/intelligent-foundry/averta/extrathin-italic/
+ * 
+ * Webfont: Averta-Light by Intelligent Design
+ * URL: https://www.myfonts.com/fonts/intelligent-foundry/averta/light/
+ * 
+ * Webfont: Averta-LightItalic by Intelligent Design
+ * URL: https://www.myfonts.com/fonts/intelligent-foundry/averta/light-italic/
+ * 
+ * Webfont: Averta-Regular by Intelligent Design
+ * URL: https://www.myfonts.com/fonts/intelligent-foundry/averta/regular/
+ * 
+ * Webfont: Averta-RegularItalic by Intelligent Design
+ * URL: https://www.myfonts.com/fonts/intelligent-foundry/averta/regular-italic/
+ * 
+ * Webfont: Averta-Semibold by Intelligent Design
+ * URL: https://www.myfonts.com/fonts/intelligent-foundry/averta/semibold/
+ * 
+ * Webfont: Averta-SemiboldItalic by Intelligent Design
+ * URL: https://www.myfonts.com/fonts/intelligent-foundry/averta/semibold-italic/
+ * 
+ * Webfont: Averta-Thin by Intelligent Design
+ * URL: https://www.myfonts.com/fonts/intelligent-foundry/averta/thin/
+ * 
+ * Webfont: Averta-ThinItalic by Intelligent Design
+ * URL: https://www.myfonts.com/fonts/intelligent-foundry/averta/thin-italic/
+ * 
+ * 
+ * Webfonts copyright: Copyright (c) 2015 by Kostas Bartsokas. All rights reserved.
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3c7037");
+  
+@font-face {
+  font-family: 'Averta-Bold';
+  src: url('webFonts/Averta-Bold/font.woff2') format('woff2'), url('webFonts/Averta-Bold/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Averta-BlackItalic';
+  src: url('webFonts/Averta-BlackItalic/font.woff2') format('woff2'), url('webFonts/Averta-BlackItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Averta-BoldItalic';
+  src: url('webFonts/Averta-BoldItalic/font.woff2') format('woff2'), url('webFonts/Averta-BoldItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Averta-Black';
+  src: url('webFonts/Averta-Black/font.woff2') format('woff2'), url('webFonts/Averta-Black/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Averta-Extrabold';
+  src: url('webFonts/Averta-Extrabold/font.woff2') format('woff2'), url('webFonts/Averta-Extrabold/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Averta-Thin';
+  src: url('webFonts/Averta-Thin/font.woff2') format('woff2'), url('webFonts/Averta-Thin/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Averta-ThinItalic';
+  src: url('webFonts/Averta-ThinItalic/font.woff2') format('woff2'), url('webFonts/Averta-ThinItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Averta-Semibold';
+  src: url('webFonts/Averta-Semibold/font.woff2') format('woff2'), url('webFonts/Averta-Semibold/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Averta-SemiboldItalic';
+  src: url('webFonts/Averta-SemiboldItalic/font.woff2') format('woff2'), url('webFonts/Averta-SemiboldItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Averta-RegularItalic';
+  src: url('webFonts/Averta-RegularItalic/font.woff2') format('woff2'), url('webFonts/Averta-RegularItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Averta-LightItalic';
+  src: url('webFonts/Averta-LightItalic/font.woff2') format('woff2'), url('webFonts/Averta-LightItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Averta-Regular';
+  src: url('webFonts/Averta-Regular/font.woff2') format('woff2'), url('webFonts/Averta-Regular/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Averta-Light';
+  src: url('webFonts/Averta-Light/font.woff2') format('woff2'), url('webFonts/Averta-Light/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Averta-ExtraboldItalic';
+  src: url('webFonts/Averta-ExtraboldItalic/font.woff2') format('woff2'), url('webFonts/Averta-ExtraboldItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Averta-ExtrathinItalic';
+  src: url('webFonts/Averta-ExtrathinItalic/font.woff2') format('woff2'), url('webFonts/Averta-ExtrathinItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Averta-Extrathin';
+  src: url('webFonts/Averta-Extrathin/font.woff2') format('woff2'), url('webFonts/Averta-Extrathin/font.woff') format('woff');
+}
+

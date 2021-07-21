@@ -1,7 +1,11 @@
-let buttonenter = document.getElementById("buttonenter");
-buttonenter.addEventListener("click", () => {
+document.getElementById("buttonenter").addEventListener("click", () => {
   document.body.classList.add("doneenter");
-  setTimeout(() => buttonenter.remove(), 500);
+  setTimeout(() => document.querySelector("header").remove(), 500);
+}, false);
+
+document.getElementById("buttonexplore").addEventListener("click", () => {
+  document.body.classList.add("doneexplore");
+  setTimeout(() => document.querySelector("section").remove(), 500);
 }, false);
 
 document.getElementById("buttontoggleframework").addEventListener("click", () => {
