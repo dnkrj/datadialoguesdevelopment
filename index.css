@@ -278,6 +278,36 @@ body.doneenter #bubblewinbackmytrust {
   transform: translate(200%, 50%);
 }
 
+body.doneexplore:not(.showframework) #bubbleisthereanappforthat {
+  left: -15%;
+  top: 84%;
+}
+
+body.doneexplore:not(.showframework) #bubbletakemebythehand {
+  left: 80%;
+  top: 34%;
+}
+
+body.doneexplore:not(.showframework) #bubblesharingiscaring {
+  left: 16%;
+  top: -20%;
+}
+
+body.doneexplore:not(.showframework) #bubbleonmyterms {
+  left: 31%;
+  top: 85%;
+}
+
+body.doneexplore:not(.showframework) #bubblegivemefairaccess {
+  left: -18%;
+  top: 32%;
+}
+
+body.doneexplore:not(.showframework) #bubblewinbackmytrust {
+  left: 80%;
+  top: 73%;
+}
+
 #navheader {
   position: absolute;
   top: 50px;
