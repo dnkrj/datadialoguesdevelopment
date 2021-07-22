@@ -112,14 +112,28 @@ nav li {
   align-items: center;
   justify-content: center;
   text-align: center;
-  transition: all 1s ;
+  transition: all 1s;
+
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
 }
 
 nav li a {
   color: white;
-  font: 500 20px sans-serif;
+  font-family: "Averta-Regular";
+  font-size: 18px;
+  line-height: 30px;
+
   text-decoration: none;
-  margin: 40px;
+  margin: 20px;
+}
+
+#bubblegivemefairaccess a,
+#bubblesharingiscaring a,
+#bubblewinbackmytrust a {
+  color: black;
 }
 
 nav li a,
@@ -150,83 +164,92 @@ nav li:focus {
   z-index: 1;
 }
 
-#bubble1 {
+#bubbleisthereanappforthat {
   left: 0%;
-  top: 14%;
-  width: 42%;
-  height: 38%;
-  background-image: url("images/solid1.png");
-  transform: translate(-75%, -75%);
+  top: 69%;
+  width: 34%;
+  height: 34%;
+  mask-image: url("images/bubbleisthereanappforthat.svg");
+  -webkit-mask-image: url("images/bubbleisthereanappforthat.svg");
+  background: #44C293;
+
+  transform: translate(-100%, -175%);
 }
 
-body.filter #bubble1,
-#bubble1:hover,
-#bubble1:focus {
-  background-image: url("images/1.png");
+
+#bubbletakemebythehand {
+  left: 60%;
+  top: 34%;
+  width: 40%;
+  height: 29%;
+  mask-image: url("images/bubbletakemebythehand.svg");
+  -webkit-mask-image: url("images/bubbletakemebythehand.svg");
+  background: #D80015;
+
+  transform: translate(50%, -250%) scale(2.5);
 }
 
-#bubble2 {
-  left: 18%;
-  top: 57%;
-  width: 43%;
-  height: 35%;
-  background-image: url("images/solid2.png");
-  transform: translate(-200%, 100%);
+#bubblesharingiscaring {
+  left: 16%;
+  top: 0%;
+  width: 61%;
+  height: 34%;
+  mask-image: url("images/bubblesharingiscaring.svg");
+  -webkit-mask-image: url("images/bubblesharingiscaring.svg");
+  background: #47E97D;
+
+  transform: translate(200%, 0) scale(1.25);
 }
 
-#bubble2:hover,
-#bubble2:focus {
-  background-image: url("images/2.png");
+
+#bubbleonmyterms {
+  left: 31%;
+  top: 65%;
+  width: 44%;
+  height: 28%;
+  mask-image: url("images/bubbleonmyterms.svg");
+  -webkit-mask-image: url("images/bubbleonmyterms.svg");
+  background: #766DE3;
+
+  transform: translate(-200%, 150%) scale(1.5);
 }
 
-#bubble3 {
-  left: 63%;
-  top: 75%;
-  width: 37%;
-  height: 25%;
-  background-image: url("images/solid3.png");
-  transform: translate(-325%, 0);
+#bubbleseethewholeme {
+  left: 22%;
+  top: 25%;
+  width: 49%;
+  height: 46%;
+  mask-image: url("images/bubbleseethewholeme.svg");
+  -webkit-mask-image: url("images/bubbleseethewholeme.svg");
+  background: #CB27B0;
+
+  transform: translate(-200%, -100%) scale(1.75);
 }
 
-body.filter #bubble3,
-#bubble3:hover,
-#bubble3:focus {
-  background-image: url("images/3.png");
-}
-
-#bubble4 {
-  left: 64%;
+#bubblegivemefairaccess {
+  left: 2%;
   top: 32%;
   width: 30%;
-  height: 27%;
-  background-image: url("images/solid4.png");
-  transform: translate(200%, 150%)
+  height: 38%;
+  mask-image: url("images/bubblegivemefairaccess.svg");
+  -webkit-mask-image: url("images/bubblegivemefairaccess.svg");
+  background: #EAE617;
+
+  transform: translate(-350%, 50%) scale(1.75);
 }
 
-#bubble4:hover,
-#bubble4:focus {
-  background-image: url("images/4.png");
+#bubblewinbackmytrust {
+  left: 65%;
+  top: 58%;
+  width: 25%;
+  height: 23%;
+  mask-image: url("images/bubblewinbackmytrust.svg");
+  -webkit-mask-image: url("images/bubblewinbackmytrust.svg");
+  background: #62CEE2;
+
+  transform: translate(200%, 50%) scale(1.5);
 }
 
-#bubble5 {
-  left: 33%;
-  top: 0%;
-  width: 55%;
-  height: 39%;
-  background-image: url("images/solid5.png");
-  transform: translate(50%, -100%)
-}
-
-body.filter #bubble5,
-#bubble5:hover,
-#bubble5:focus {
-  background-image: url("images/5.png");
-}
-
-#bubble6,
-#bubble7 {
-  display: none;
-}
 
 #navheader {
   position: absolute;
