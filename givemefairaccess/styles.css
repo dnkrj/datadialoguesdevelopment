@@ -1,12 +1,8 @@
 :root {
   --button-color: #EAE750;
+  --background-color: #0560D6;
 }
 
 body {
-  background: #0560d6;
   background-image: url('bg.png');
-  background-repeat: no-repeat;
-  background-position: left;
-  background-attachment: fixed;
-  background-size: auto 100vh;
 }

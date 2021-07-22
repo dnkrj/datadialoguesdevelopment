@@ -23,6 +23,14 @@ h2 {
   margin-bottom: 28px;
 }
 
+h3 {
+  color: #002E56;
+  font-family: "Averta-Bold";
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
 p {
   color: black;
   font-family: "Averta-Regular";
