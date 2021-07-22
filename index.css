@@ -250,6 +250,33 @@ nav li:focus {
   transform: translate(200%, 50%) scale(1.5);
 }
 
+body.doneenter #bubbleisthereanappforthat{
+  transform: translate(-150%, -175%);
+}
+
+body.doneenter #bubbletakemebythehand{
+  transform: translate(0%, -200%);
+}
+
+body.doneenter #bubblesharingiscaring{
+  transform: translate(200%, 0);
+}
+
+body.doneenter #bubbleonmyterms{
+  transform: translate(-150%, 100%);
+}
+
+body.doneenter #bubbleseethewholeme{
+  transform: translate(-150%, -150%);
+}
+
+body.doneenter #bubblegivemefairaccess{
+  transform: translate(-350%, 50%);
+}
+
+body.doneenter #bubblewinbackmytrust {
+  transform: translate(200%, 50%);
+}
 
 #navheader {
   position: absolute;
