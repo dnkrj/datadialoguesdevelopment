@@ -48,8 +48,8 @@ let showMessage = (i) => {
 	let ol = document.getElementById("messages");
 	let li = document.createElement("li");
 	if (message.choice) {
-		let a = document.createElement("a");
-		a.href = "javascript:;";
+		let button = document.createElement("button");
+		button.type = "button";
 		li.addEventListener("click", () => {
 			document.querySelectorAll('.choice').forEach((e) => {
 				e.classList.add(e == li ? "hide" : "quickhide")
@@ -59,8 +59,8 @@ let showMessage = (i) => {
 				document.querySelectorAll('.choice').forEach(e => e.remove());
 			}, 1000)
 		}, false);
-		a.appendChild(document.createTextNode(message.text));
-		li.appendChild(a);
+		button.appendChild(document.createTextNode(message.text));
+		li.appendChild(button);
 		li.classList.add("choice");
 	} else {
 		li.appendChild(document.createTextNode(message.text));
