@@ -72,13 +72,15 @@ let showMessage = (i) => {
 	if (!message.pause) {
 		let showNext = () => showMessage(message.next || i + 1);
 		if (!message.choice) {
-			setTimeout(showNext, message.text.length*15);
+			setTimeout(showNext, Math.max(message.text.length*15, 200));
 		} else {
 			showNext();
 		}
 	} else if(!message.choice) {
 		document.body.classList.remove("inprogress");
 	};
+
+	[...document.querySelectorAll('#messages li:not(.choice')].slice(0, -2).forEach(e => e.classList.add("fade"))
 }
 
 showMessage(0)

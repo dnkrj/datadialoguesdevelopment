@@ -118,6 +118,8 @@ nav li {
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
 }
 
 nav li a {
@@ -169,9 +171,6 @@ nav li:focus {
   top: 69%;
   width: 34%;
   height: 34%;
-  mask-image: url("images/bubbleisthereanappforthat.svg");
-  -webkit-mask-image: url("images/bubbleisthereanappforthat.svg");
-  background: #44C293;
 
   transform: translate(-100%, -175%);
 }
@@ -182,9 +181,6 @@ nav li:focus {
   top: 34%;
   width: 40%;
   height: 29%;
-  mask-image: url("images/bubbletakemebythehand.svg");
-  -webkit-mask-image: url("images/bubbletakemebythehand.svg");
-  background: #D80015;
 
   transform: translate(50%, -250%) scale(2.5);
 }
@@ -194,9 +190,6 @@ nav li:focus {
   top: 0%;
   width: 61%;
   height: 34%;
-  mask-image: url("images/bubblesharingiscaring.svg");
-  -webkit-mask-image: url("images/bubblesharingiscaring.svg");
-  background: #47E97D;
 
   transform: translate(200%, 0) scale(1.25);
 }
@@ -207,9 +200,6 @@ nav li:focus {
   top: 65%;
   width: 44%;
   height: 28%;
-  mask-image: url("images/bubbleonmyterms.svg");
-  -webkit-mask-image: url("images/bubbleonmyterms.svg");
-  background: #766DE3;
 
   transform: translate(-200%, 150%) scale(1.5);
 }
@@ -219,9 +209,6 @@ nav li:focus {
   top: 25%;
   width: 49%;
   height: 46%;
-  mask-image: url("images/bubbleseethewholeme.svg");
-  -webkit-mask-image: url("images/bubbleseethewholeme.svg");
-  background: #CB27B0;
 
   transform: translate(-200%, -100%) scale(1.75);
 }
@@ -231,9 +218,6 @@ nav li:focus {
   top: 32%;
   width: 30%;
   height: 38%;
-  mask-image: url("images/bubblegivemefairaccess.svg");
-  -webkit-mask-image: url("images/bubblegivemefairaccess.svg");
-  background: #EAE617;
 
   transform: translate(-350%, 50%) scale(1.75);
 }
@@ -243,9 +227,6 @@ nav li:focus {
   top: 58%;
   width: 25%;
   height: 23%;
-  mask-image: url("images/bubblewinbackmytrust.svg");
-  -webkit-mask-image: url("images/bubblewinbackmytrust.svg");
-  background: #62CEE2;
 
   transform: translate(200%, 50%) scale(1.5);
 }

@@ -13,7 +13,7 @@ body {
 
 #messages {
   width: 100vw;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 0 0 auto;
   padding: 150px;
   display: flex;
@@ -22,24 +22,35 @@ body {
 }
 
 #messages li {
-  font: 300 22px sans-serif;
-  margin: 30px 0;
+  font-family: "Averta-RegularItalic";
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 28px 0;
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
-  color: rgb(243, 247, 251);
+  color: white;
+  transition: all 2s ease;
 }
 
 #messages li.received {
   margin-right: 40%;
-  color: rgb(118, 240, 295);
   animation: fadeindown 0.4s ease-in;
 }
 
 #messages li.sent {
   margin-left: 40%;
-  text-align: right;
   animation: fadeinup 0.4s ease-in;
+}
+
+#messages li.received.fade {
+  opacity: 0.8;
+  transform: scale(0.9) translate(6%);
+}
+
+#messages li.sent.fade {
+  opacity: 0.8;
+  transform: scale(0.9) translate(-6%);
 }
 
 #messages li.choice {
@@ -77,7 +88,7 @@ body {
 }
 
 body.inprogress article {
-  /*display: n*/one;
+  display: none;
 }
 
 article > header,
@@ -129,6 +140,7 @@ article > nav {
   background: #E8EBF0;
   overflow: hidden;
   padding: 30px 0;
+  margin-bottom: 200px;
 }
 
 nav ul li {
@@ -137,21 +149,31 @@ nav ul li {
   position: relative;
 }
 
+nav ul a {
+  text-decoration: none;;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
 .imagecontainer {
   position: absolute;
   width: 30%;
-  top: 0;
+  top: -5px;
   left: 0;
-  bottom: 0;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  bottom: -5px;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  transition: transform 0.5s ease;
 }
 
-.imagecontainer#isthereanappforthat {
-  background-image: url("images/bubbleisthereanappforthat.svg");
-}
-
-.imagecontainer#takemebythehand {
-  background-image: url("images/bubbletakemebythehand.svg");
+.imagecontainer:hover {
+  transform: scale(1.1);
 }
