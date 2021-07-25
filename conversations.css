@@ -79,14 +79,6 @@ body {
   transform: translateY(-2%) scale(1.1);
 }
 
-#messages li.choice button:first-child:hover {
-  border-radius: 80px 60px 70px 60px / 80px 90px 60px 50px;
-}
-
-#messages li.choice button:last-child:hover {
-  border-radius: 100px 190px 90px 100px / 100px 100px 160px 200px;
-}
-
 body.inprogress article {
   display: none;
 }
