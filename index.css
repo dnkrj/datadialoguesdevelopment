@@ -45,6 +45,7 @@ body.doneexplore section {
 
 header h1 {
   font-size: 60px;
+  margin-bottom: 38px;
 
   animation: fadeinup 0.5s ease-out backwards;
   animation-delay: 0.25s;
@@ -55,26 +56,28 @@ section p {
   max-width: 550px;
 
   font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 38px;
   color: #002E56;
 
   animation: fadeinup 0.5s ease-out backwards;
-  animation-delay: 1s;
+  animation-delay: 1.75s;
 }
 
 header p:nth-child(3),
 section p:nth-child(2) {
-  animation-delay: 2s;
+  animation-delay: 3.25s;
 }
 
 header p:nth-child(4),
 section p:nth-child(3) {
-  animation-delay: 3s;
+  animation-delay: 4.75s;
 }
 
 header button,
 section button {
   animation: fadeinup 0.5s ease-out backwards;
-  animation-delay: 4s;
+  animation-delay: 6.25s;
 }
 
 body:not(.doneenter) section {
@@ -157,6 +160,7 @@ body.doneexplore #buttons button {
 }
 
 body.doneexplore li {
+  animation: nopointerevents 1s;
   transform: translate(0, 0) !important;
 }
 
@@ -326,17 +330,26 @@ body.doneexplore #buttons button:nth-child(4) {
 }
 
 #buttons button#buttontogglesound:hover {
-  width: 173px;
+  width: 189px;
 }
 
 #buttons button#buttonfilter:hover {
-  width: 183px;
+  width: 197px;
 }
 
 #buttons button#buttondownload:hover {
-  width: 237px;
+  width: 251px;
 }
 
 #buttons button#buttontoggleframework:hover {
-  width: 212px;
+  width: 226px;
+}
+
+#buttons button svg {
+  height: 24px;
+  width: 24px;
+  fill: white;
+  margin-left: -12px;
+  margin-bottom: -6px;
+  margin-right: 6px;
 }

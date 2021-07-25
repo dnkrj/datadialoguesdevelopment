@@ -1,3 +1,13 @@
+@keyframes nopointerevents {
+  from {
+    pointer-events: none;
+  }
+
+  to {
+    pointer-events: none;
+  }
+}
+
 @keyframes fadein {
   from {
     opacity: 0;
