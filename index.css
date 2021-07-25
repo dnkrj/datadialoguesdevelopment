@@ -127,12 +127,12 @@ nav li {
 
 nav li a {
   color: white;
-  font-family: "Averta-Regular";
-  font-size: 18px;
-  line-height: 30px;
+  font-family: "Averta-Bold";
+  font-size: 17px;
+  line-height: 1.2;
 
   text-decoration: none;
-  margin: 20px;
+  margin: 30px;
 }
 
 #bubblegivemefairaccess a,
@@ -181,10 +181,10 @@ nav li:focus {
 
 
 #bubbletakemebythehand {
-  left: 60%;
-  top: 34%;
-  width: 40%;
-  height: 29%;
+  left: 62%;
+  top: 35%;
+  width: 38%;
+  height: 28%;
 
   transform: translate(50%, -250%) scale(2.5);
 }
@@ -299,17 +299,22 @@ body.doneexplore:not(.showframework) #bubblewinbackmytrust {
   left: 50px;
 }
 
+#navheader h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
 #buttons {
   position: absolute;
-  right: 50px;
-  bottom: 50px;
+  right: 25px;
+  bottom: 25px;
 }
 
 #buttons button {
   width: 0;
   white-space: nowrap;
   color: rgba(255, 255, 255, 0);
-  margin: 10px;
+  margin: 5px;
 }
 
 body.doneexplore #buttons button:nth-child(2) {
