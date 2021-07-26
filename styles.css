@@ -10,7 +10,7 @@ ol, ul {
 h1 {
   color: #002E56;
   font-family: "Averta-Regular";
-  font-size: 36px;
+  font-size: 48px;
   line-height: 1.4;
   margin-bottom: 28px;
 }
@@ -37,6 +37,12 @@ p {
   font-size: 18px;
   line-height: 1.85;
   margin-bottom: 18px;
+}
+
+p em {
+  font-family: "Averta-RegularItalic";
+  color: #002E56;
+  font-style: normal;
 }
 
 button {
@@ -66,43 +72,43 @@ button:focus {
 #bubbleisthereanappforthat {
   mask-image: url("images/bubbleisthereanappforthat.svg");
   -webkit-mask-image: url("images/bubbleisthereanappforthat.svg");
-  background: #44C293;
+  background: var(--isthereanappforthat-color);
 }
 
 
 #bubbletakemebythehand {
   mask-image: url("images/bubbletakemebythehand.svg");
   -webkit-mask-image: url("images/bubbletakemebythehand.svg");
-  background: #D80015;
+  background: var(--takemebythehand-color);
 }
 
 #bubblesharingiscaring {
   mask-image: url("images/bubblesharingiscaring.svg");
   -webkit-mask-image: url("images/bubblesharingiscaring.svg");
-  background: #47E97D;
+  background: var(--sharingiscaring-color);
 }
 
 
 #bubbleonmyterms {
   mask-image: url("images/bubbleonmyterms.svg");
   -webkit-mask-image: url("images/bubbleonmyterms.svg");
-  background: #766DE3;
+  background: var(--onmyterms-color);
 }
 
 #bubbleseethewholeme {
   mask-image: url("images/bubbleseethewholeme.svg");
   -webkit-mask-image: url("images/bubbleseethewholeme.svg");
-  background: #CB27B0;
+  background: var(--seethewholeme-color);
 }
 
 #bubblegivemefairaccess {
   mask-image: url("images/bubblegivemefairaccess.svg");
   -webkit-mask-image: url("images/bubblegivemefairaccess.svg");
-  background: #EAE617;
+  background: var(--givemefairaccess-color);
 }
 
 #bubblewinbackmytrust {
   mask-image: url("images/bubblewinbackmytrust.svg");
   -webkit-mask-image: url("images/bubblewinbackmytrust.svg");
-  background: #62CEE2;
+  background: var(--winbackmytrust-color);
 }

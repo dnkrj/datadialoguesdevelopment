@@ -1,8 +1,9 @@
 :root {
-  --button-color: #EAE750;
-  --background-color: #0560D6;
+  --button-color: var(--givemefairaccess-color);
+  --background-color: var(--givemefairaccess-background-color);
+  --conversation-color: var(--givemefairaccess-text-color);
 }
 
 body {
-  background-image: url('bg.png');
+  background-image: url('../images/backgroundgivemefairaccess.png');
 }

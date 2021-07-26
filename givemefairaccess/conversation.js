@@ -67,7 +67,7 @@ let showMessage = (i) => {
 	}
 	li.classList.add(message.received ? "received" : "sent");
 	ol.appendChild(li);
-	li.scrollIntoView({behavior: "smooth"});
+	ol.scrollIntoView({block: "end", behavior: "smooth"});
 
 	if (!message.pause) {
 		let showNext = () => showMessage(message.next || i + 1);
@@ -78,6 +78,9 @@ let showMessage = (i) => {
 		}
 	} else if(!message.choice) {
 		document.body.classList.remove("inprogress");
+		setTimeout(() => {
+			document.querySelector("article section p:first-child").scrollIntoView({block: "end", behavior: "smooth"})
+		}, 2000);
 	};
 
 	[...document.querySelectorAll('#messages li:not(.choice')].slice(0, -2).forEach(e => e.classList.add("fade"))

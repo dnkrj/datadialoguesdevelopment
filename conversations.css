@@ -29,7 +29,7 @@ body {
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
-  color: white;
+  color: var(--conversation-color);
   transition: all 2s ease;
 }
 
@@ -98,7 +98,7 @@ article > nav > * {
 }
 
 article > header p {
-  color: white;
+  color: var(--conversation-color);
   font-family: "Averta-Bold";
   font-size: 14px;
   text-transform: uppercase;
@@ -107,7 +107,7 @@ article > header p {
 }
 
 article > header h1 {
-  color: white;
+  color: var(--conversation-color);
   margin-bottom: 0;
 }
 
@@ -125,7 +125,6 @@ article > section li p {
   padding: 30px;
   margin-left: -30px;
   margin-right: -30px;
-  /*margin: 20px -30px;*/
 }
 
 article > nav {
