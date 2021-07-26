@@ -69,6 +69,42 @@ button:focus {
   background: #002E56;
 }
 
+button.toggle {
+  width: 0;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0);
+}
+
+button.toggle svg {
+  height: 24px;
+  width: 24px;
+  fill: white;
+  margin-left: -12px;
+  margin-bottom: -6px;
+  margin-right: 6px;
+}
+
+button.toggle:hover {
+  color: white;
+  width: auto;
+}
+
+#buttontogglesound:hover {
+  width: 189px;
+}
+
+#buttonfilter:hover {
+  width: 197px;
+}
+
+#buttondownload:hover {
+  width: 251px;
+}
+
+#buttontoggleframework:hover {
+  width: 226px;
+}
+
 #bubbleisthereanappforthat {
   mask-image: url("images/bubbleisthereanappforthat.svg");
   -webkit-mask-image: url("images/bubbleisthereanappforthat.svg");

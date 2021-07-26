@@ -170,3 +170,9 @@ nav ul a:focus {
 .imagecontainer:hover {
   transform: scale(1.1);
 }
+
+#buttontogglesound {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}

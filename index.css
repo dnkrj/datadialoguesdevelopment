@@ -311,9 +311,6 @@ body.doneexplore:not(.showframework) #bubblewinbackmytrust {
 }
 
 #buttons button {
-  width: 0;
-  white-space: nowrap;
-  color: rgba(255, 255, 255, 0);
   margin: 5px;
 }
 
@@ -327,34 +324,4 @@ body.doneexplore #buttons button:nth-child(3) {
 
 body.doneexplore #buttons button:nth-child(4) {
   animation-delay: 1.5s;
-}
-
-#buttons button:hover {
-  color: white;
-  width: auto;
-}
-
-#buttons button#buttontogglesound:hover {
-  width: 189px;
-}
-
-#buttons button#buttonfilter:hover {
-  width: 197px;
-}
-
-#buttons button#buttondownload:hover {
-  width: 251px;
-}
-
-#buttons button#buttontoggleframework:hover {
-  width: 226px;
-}
-
-#buttons button svg {
-  height: 24px;
-  width: 24px;
-  fill: white;
-  margin-left: -12px;
-  margin-bottom: -6px;
-  margin-right: 6px;
 }

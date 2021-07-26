@@ -1,3 +1,7 @@
+document.getElementById("buttontogglesound").addEventListener("click", () => {
+  document.querySelector("audio").volume = document.querySelector("audio").volume ? 0 : 1;
+}, false);
+
 let showMessage = (i) => {
 	let message = messages[i];
 	let ol = document.getElementById("messages");
@@ -8,7 +12,7 @@ let showMessage = (i) => {
 		li.addEventListener("click", function handler() {
 			this.removeEventListener('click', handler);
 			document.querySelector("audio").play();
-			document.querySelectorAll('.choice').forEach((e) => {
+			ol.querySelectorAll('.choice').forEach((e) => {
 				e.classList.add(e == li ? "hide" : "quickhide")
 			});
 			setTimeout(() => {
@@ -40,7 +44,7 @@ let showMessage = (i) => {
 		}, 2000);
 	};
 
-	[...document.querySelectorAll('#messages li:not(.choice')].slice(0, -2).forEach(e => e.classList.add("fade"))
+	[...ol.querySelectorAll('#messages li:not(.choice')].slice(0, -2).forEach(e => e.classList.add("fade"))
 }
 
 showMessage(0)

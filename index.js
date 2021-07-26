@@ -9,6 +9,10 @@ document.getElementById("buttonexplore").addEventListener("click", () => {
   setTimeout(() => document.querySelector("section").remove(), 500);
 }, false);
 
+document.getElementById("buttontogglesound").addEventListener("click", () => {
+  document.querySelector("audio").volume = document.querySelector("audio").volume ? 0 : 1;
+}, false);
+
 document.getElementById("buttontoggleframework").addEventListener("click", () => {
   document.body.classList.toggle("showframework");
 }, false);
