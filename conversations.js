@@ -26,14 +26,14 @@ let showMessage = (i) => {
 	} else {
 		li.appendChild(document.createTextNode(message.text));
 	}
-	li.classList.add(message.received ? "received" : "sent");
+	li.classList.add(message.type || "sent");
 	ol.appendChild(li);
 	ol.scrollIntoView({block: "end", behavior: "smooth"});
 
 	if (!message.pause) {
 		let showNext = () => showMessage(message.next || i + 1);
 		if (!message.choice) {
-			setTimeout(showNext, Math.max(message.text.length*15, 200));
+			setTimeout(showNext, Math.max(message.text.length*15, 1000));
 		} else {
 			showNext();
 		}
@@ -44,7 +44,7 @@ let showMessage = (i) => {
 		}, 2000);
 	};
 
-	[...ol.querySelectorAll('#messages li:not(.choice')].slice(0, -2).forEach(e => e.classList.add("fade"))
+	[...ol.querySelectorAll('#messages li:not(.choice')].slice(0, -3).forEach(e => e.classList.add("fade"))
 }
 
 showMessage(0)

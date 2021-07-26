@@ -31,6 +31,15 @@ body {
   width: 100%;
   color: var(--conversation-color);
   transition: all 2s ease;
+  white-space: pre-wrap;
+}
+
+#messages li.intro {
+  margin-right: 40%;
+  animation: fadein 0.4s ease-in;
+
+  font-family: "Averta-Regular";
+  color: #002E56;
 }
 
 #messages li.received {
@@ -43,6 +52,7 @@ body {
   animation: fadeinup 0.4s ease-in;
 }
 
+#messages li.intro.fade,
 #messages li.received.fade {
   opacity: 0.8;
   transform: scale(0.9) translate(6%);
