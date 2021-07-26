@@ -1,5 +1,6 @@
 document.getElementById("buttonenter").addEventListener("click", () => {
   document.body.classList.add("doneenter");
+  document.querySelector("audio").play();
   setTimeout(() => document.querySelector("header").remove(), 500);
 }, false);
 

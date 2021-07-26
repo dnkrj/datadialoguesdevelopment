@@ -137,6 +137,8 @@ article > nav {
 nav ul li {
   margin: 30px;
   padding-left: 30%;
+  padding-top: 5px;
+  padding-bottom: 5px;
   position: relative;
 }
 
