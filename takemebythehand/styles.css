@@ -1,0 +1,10 @@
+:root {
+  --button-color: var(--takemebythehand-color);
+  --background-color: var(--takemebythehand-background-color);
+  --text-color: var(--takemebythehand-text-color);
+  --conversation-color: var(--takemebythehand-text-color);
+}
+
+body {
+  background-image: url('../images/backgroundtakemebythehand.png');
+}

@@ -1,0 +1,10 @@
+:root {
+  --button-color: var(--sharingiscaring-color);
+  --background-color: var(--sharingiscaring-background-color);
+  --text-color: var(--sharingiscaring-text-color);
+  --conversation-color: var(--sharingiscaring-text-color);
+}
+
+body {
+  background-image: url('../images/backgroundsharingiscaring.png');
+}

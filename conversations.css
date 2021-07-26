@@ -39,7 +39,6 @@ body {
   animation: fadein 0.4s ease-in;
 
   font-family: "Averta-Regular";
-  color: #002E56;
 }
 
 #messages li.received {
@@ -82,7 +81,7 @@ body {
 
 #messages li button {
   background: var(--button-color);
-  color: black;
+  color: var(--text-color);
 }
 
 #messages li.choice:hover {
@@ -90,7 +89,7 @@ body {
 }
 
 body.inprogress article {
-  display: none;
+  /*display: none;*/
 }
 
 article > header,
@@ -131,6 +130,7 @@ article > section h2 {
 
 article > section li p {
   background: var(--button-color);
+  color: var(--text-color);
   border-radius: 30px;
   padding: 30px;
   margin-left: -30px;
