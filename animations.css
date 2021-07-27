@@ -55,11 +55,13 @@
   from {
     transform: translateY(10px);
     opacity: 0;
+    pointer-events: none;
   }
 
   to {
     transform: translateY(0);
     opacity: 1;
+    pointer-events: none;
   }
 }
 

@@ -48,6 +48,7 @@ let showMessage = (i) => {
 		document.body.classList.remove("inprogress");
 		setTimeout(() => {
 			document.querySelector("article section p:first-child").scrollIntoView({block: "end", behavior: "smooth"})
+			document.querySelectorAll("audio").forEach(a => a.volume = 0);
 		}, 2000);
 	};
 

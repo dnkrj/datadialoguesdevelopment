@@ -2,9 +2,9 @@
   --button-color: var(--onmyterms-color);
   --background-color: var(--onmyterms-background-color);
   --text-color: var(--onmyterms-text-color);
-  --conversation-color: var(--onmyterms-text-color);
+  --conversation-color: black;
 }
 
 body {
-  background-image: url('../images/backgroundonmyterms.png');
+  background-image: url('../images/backgroundonmyterms.jpg');
 }
