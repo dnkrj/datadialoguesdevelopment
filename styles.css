@@ -71,6 +71,7 @@ button:focus {
 
 button.toggle {
   width: 0;
+  overflow: hidden;
   white-space: nowrap;
   color: rgba(255, 255, 255, 0);
 }
