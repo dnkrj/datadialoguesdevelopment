@@ -1,6 +1,8 @@
 document.getElementById("buttontogglesound").addEventListener("click", () => {
-  document.querySelector("audio").volume = document.querySelector("audio").volume ? 0 : 1;
+  document.querySelectorAll("audio").forEach(a => a.volume = a.volume ? 0 : 1);
 }, false);
+
+let firstChoice = true;
 
 let showMessage = (i) => {
 	let message = messages[i];
@@ -11,14 +13,17 @@ let showMessage = (i) => {
 		button.type = "button";
 		li.addEventListener("click", function handler() {
 			this.removeEventListener('click', handler);
-			document.querySelector("audio").play();
+			if (firstChoice) {
+				document.querySelectorAll("audio").forEach(a => a.play());
+				firstChoice = false;
+			}
 			ol.querySelectorAll('.choice').forEach((e) => {
 				e.classList.add(e == li ? "hide" : "quickhide")
 			});
 			setTimeout(() => {
 				showMessage(message.choice);
 				document.querySelectorAll('.choice').forEach(e => e.remove());
-			}, 1000)
+			}, message.delay || 1000)
 		}, false);
 		button.appendChild(document.createTextNode(message.text));
 		li.appendChild(button);
@@ -31,9 +36,11 @@ let showMessage = (i) => {
 	ol.scrollIntoView({block: "end", behavior: "smooth"});
 
 	if (!message.pause) {
-		let showNext = () => showMessage(message.next || i + 1);
+		let nextIndex = message.next || i + 1;
+		let showNext = () => showMessage(nextIndex);
 		if (!message.choice) {
-			setTimeout(showNext, Math.max(message.text.length*15, 1000));
+			let minPause = message.type == messages[nextIndex].type ? 1000 : 2000;
+			setTimeout(showNext, Math.max(message.text.length*15, minPause));
 		} else {
 			showNext();
 		}

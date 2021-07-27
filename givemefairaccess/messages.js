@@ -1,6 +1,6 @@
 var messages = [{type: 'intro', text: "You are Lesley, 67, living in Mid Calder"}, {type: 'intro', text: "You are out on a walk without your guide dog in Almond Park"},
 	{type: 'intro', text: "Your phone rings - It is your daughter, Samantha"},
-	{choice: 4, pause: true, text: "Hello?"},
+	{choice: 4, pause: true, delay: 5000, text: "Pick up the phone"},
 	{text: "Hello?"},
 	{text: "Who is it?"},
 	{type:'received', text: "It's me, Samantha"},
