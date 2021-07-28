@@ -45,6 +45,10 @@ p em {
   font-style: normal;
 }
 
+a {
+  cursor: pointer;
+}
+
 button {
   background: #0067C3;
   color: white;
@@ -67,6 +71,7 @@ button:focus {
   outline: none;
   transform: scale(1.05);
   background: #002E56;
+  cursor: pointer;
 }
 
 button.toggle {

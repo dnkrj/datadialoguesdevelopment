@@ -111,6 +111,8 @@ nav li {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
   transition: all 1s;
 
   mask-size: contain;
@@ -121,29 +123,30 @@ nav li {
   -webkit-mask-position: center;
 }
 
-nav li a {
-  color: white;
+nav a {
+  color:  rgba(255, 255, 255, 0);
   font-family: "Averta-Bold";
   font-size: 17px;
   line-height: 1.2;
 
   text-decoration: none;
-  margin: 30px;
 }
 
-#bubblegivemefairaccess a,
-#bubblesharingiscaring a,
-#bubblewinbackmytrust a {
+body.doneexplore nav a {
+  color: white;
+}
+
+body.doneexplore nav #bubblegivemefairaccess,
+body.doneexplore nav #bubblesharingiscaring,
+body.doneexplore nav #bubbletakemebythehand {
   color: black;
 }
 
-nav li a,
 nav #navheader,
 #buttons button {
   display: none;
 }
 
-body.doneexplore nav li a,
 body.doneexplore nav #navheader {
   display: inline-block;
   animation: fadein 2s backwards;
@@ -196,19 +199,19 @@ body.doneenter.doneexplore #bubblewinbackmytrust {
 
 
 body.doneenter.doneexplore #bubbleisthereanappforthat:hover,
-body.doneenter.doneexplore #bubbleisthereanappforthat:focus,
+body.doneenter.doneexplore a:focus #bubbleisthereanappforthat,
 body.doneenter.doneexplore #bubbletakemebythehand:hover,
-body.doneenter.doneexplore #bubbletakemebythehand:focus,
+body.doneenter.doneexplore a:focus #bubbletakemebythehand,
 body.doneenter.doneexplore #bubblesharingiscaring:hover,
-body.doneenter.doneexplore #bubblesharingiscaring:focus,
+body.doneenter.doneexplore a:focus #bubblesharingiscaring,
 body.doneenter.doneexplore #bubbleonmyterms:hover,
-body.doneenter.doneexplore #bubbleonmyterms:focus,
+body.doneenter.doneexplore a:focus #bubbleonmyterms,
 body.doneenter.doneexplore #bubbleseethewholeme:hover,
-body.doneenter.doneexplore #bubbleseethewholeme:focus,
+body.doneenter.doneexplore a:focus #bubbleseethewholeme,
 body.doneenter.doneexplore #bubblegivemefairaccess:hover,
-body.doneenter.doneexplore #bubblegivemefairaccess:focus,
+body.doneenter.doneexplore a:focus #bubblegivemefairaccess,
 body.doneenter.doneexplore #bubblewinbackmytrust:hover,
-body.doneenter.doneexplore #bubblewinbackmytrust:focus {
+body.doneenter.doneexplore a:focus #bubblewinbackmytrust {
   transform: translate3d(-1%, -1%, 5px) scale(1.05);
   z-index: 1;
 }
