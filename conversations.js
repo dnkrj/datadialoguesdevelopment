@@ -51,7 +51,7 @@ let showMessage = (i) => {
 		setTimeout(() => {
 			zenscroll.intoView(document.querySelector("article section p:first-child"), 2000);
 			document.querySelectorAll("audio").forEach(a => a.volume = 0);
-		}, 2000);
+		}, 3000);
 	};
 
 	[...ol.querySelectorAll('#messages li:not(.choice')].slice(0, -3).forEach(e => e.classList.add("fade"))
