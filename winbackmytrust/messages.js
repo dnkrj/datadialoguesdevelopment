@@ -56,5 +56,5 @@ var messages = [{type: 'intro', text: "You are a leader at a community centre in
 	{next: 58, text: "Its not about the protocols, It about what happens when they aren’t followed."},
 	{text: "But we don’t trust the protocols."},
 	{text: "There are countless cases of screw ups and data breaches, or even people openly lying about how the data will be used."},
-	{text: "Who is responsible in those cases? How do people get justice? How can we get recompense?"},
+	{pause: true, text: "Who is responsible in those cases? How do people get justice? How can we get recompense?"},
 ]
