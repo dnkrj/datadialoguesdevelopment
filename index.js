@@ -22,3 +22,9 @@ document.querySelectorAll('li a').forEach((e) => {
 		document.body.classList.add('transitioning');
 	}, false)
 });
+
+let map = document.getElementById("map");
+function updatePerspective(p){
+  map.style.perspectiveOrigin = `${window.innerWidth/2 - p.pageX}px ${window.innerHeight/2 - p.pageY}px`
+}
+addEventListener('mousemove', updatePerspective, false);

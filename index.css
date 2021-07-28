@@ -85,6 +85,7 @@ body:not(.doneenter) section {
   width: 60vh;
   position: absolute;
   padding: 0;
+  perspective: 100px;
 }
 
 #framework {
@@ -155,16 +156,63 @@ body.doneexplore #buttons button {
   animation-delay: 0.75s;
 }
 
-body.doneexplore li {
+body.doneenter.doneexplore #bubbleisthereanappforthat,
+body.doneenter.doneexplore #bubbletakemebythehand,
+body.doneenter.doneexplore #bubblesharingiscaring,
+body.doneenter.doneexplore #bubbleonmyterms,
+body.doneenter.doneexplore #bubbleseethewholeme,
+body.doneenter.doneexplore #bubblegivemefairaccess,
+body.doneenter.doneexplore #bubblewinbackmytrust {
   animation: nopointerevents 1s;
-  transform: translate(0, 0) !important;
 }
 
-nav li:hover,
-nav li:focus {
-  transform: scale(1.05) !important;
+body.doneenter.doneexplore #bubbleisthereanappforthat {
+  transform: translate3d(0, 0, 0.1px);
+}
+
+body.doneenter.doneexplore #bubbletakemebythehand {
+  transform: translate3d(0, 0, 1px);
+}
+
+body.doneenter.doneexplore #bubblesharingiscaring {
+  transform: translate3d(0, 0, 0.25px);
+}
+
+body.doneenter.doneexplore #bubbleonmyterms {
+  transform: translate3d(0, 0, 0.5px);
+}
+
+body.doneenter.doneexplore #bubbleseethewholeme {
+  transform: translate3d(0, 0, 0.75px);
+}
+
+body.doneenter.doneexplore #bubblegivemefairaccess {
+  transform: translate3d(0, 0, 1.25px);
+}
+
+body.doneenter.doneexplore #bubblewinbackmytrust {
+  transform: translate3d(0, 0, 1.5px);
+}
+
+
+body.doneenter.doneexplore #bubbleisthereanappforthat:hover,
+body.doneenter.doneexplore #bubbleisthereanappforthat:focus,
+body.doneenter.doneexplore #bubbletakemebythehand:hover,
+body.doneenter.doneexplore #bubbletakemebythehand:focus,
+body.doneenter.doneexplore #bubblesharingiscaring:hover,
+body.doneenter.doneexplore #bubblesharingiscaring:focus,
+body.doneenter.doneexplore #bubbleonmyterms:hover,
+body.doneenter.doneexplore #bubbleonmyterms:focus,
+body.doneenter.doneexplore #bubbleseethewholeme:hover,
+body.doneenter.doneexplore #bubbleseethewholeme:focus,
+body.doneenter.doneexplore #bubblegivemefairaccess:hover,
+body.doneenter.doneexplore #bubblegivemefairaccess:focus,
+body.doneenter.doneexplore #bubblewinbackmytrust:hover,
+body.doneenter.doneexplore #bubblewinbackmytrust:focus {
+  transform: translate3d(-1%, -1%, 5px) scale(1.05);
   z-index: 1;
 }
+
 
 #bubbleisthereanappforthat {
   left: 0%;
@@ -172,7 +220,7 @@ nav li:focus {
   width: 34%;
   height: 34%;
 
-  transform: translate(-100%, -175%);
+  transform: translate3d(-100%, -175%, 1px);
 }
 
 
@@ -182,7 +230,7 @@ nav li:focus {
   width: 38%;
   height: 28%;
 
-  transform: translate(50%, -250%) scale(2.5);
+  transform: translate3d(50%, -250%, 2.5px) scale(2.5);
 }
 
 #bubblesharingiscaring {
@@ -191,7 +239,7 @@ nav li:focus {
   width: 61%;
   height: 34%;
 
-  transform: translate(200%, 0) scale(1.25);
+  transform: translate3d(200%, 0%, 1.2px) scale(1.25);
 }
 
 
@@ -201,7 +249,7 @@ nav li:focus {
   width: 44%;
   height: 28%;
 
-  transform: translate(-200%, 150%) scale(1.5);
+  transform: translate3d(-200%, 150%, 1.5px) scale(1.5);
 }
 
 #bubbleseethewholeme {
@@ -210,7 +258,7 @@ nav li:focus {
   width: 49%;
   height: 46%;
 
-  transform: translate(-200%, -100%) scale(1.75);
+  transform: translate3d(-200%, -100%, 1.7px) scale(1.75);
 }
 
 #bubblegivemefairaccess {
@@ -219,7 +267,7 @@ nav li:focus {
   width: 30%;
   height: 38%;
 
-  transform: translate(-350%, 50%) scale(1.75);
+  transform: translate3d(-350%, 50%, 1.7px) scale(1.75);
 }
 
 #bubblewinbackmytrust {
@@ -228,35 +276,35 @@ nav li:focus {
   width: 25%;
   height: 23%;
 
-  transform: translate(200%, 50%) scale(1.5);
+  transform: translate3d(200%, 50%, 1.5px) scale(1.5);
 }
 
 body.doneenter #bubbleisthereanappforthat{
-  transform: translate(-150%, -175%);
+  transform: translate3d(-150%, -175%, 0.5px);
 }
 
 body.doneenter #bubbletakemebythehand{
-  transform: translate(0%, -200%);
+  transform: translate3d(0%, -200%, 1.5px);
 }
 
 body.doneenter #bubblesharingiscaring{
-  transform: translate(200%, 0);
+  transform: translate3d(200%, 0, 0.75px);
 }
 
 body.doneenter #bubbleonmyterms{
-  transform: translate(-150%, 100%);
+  transform: translate3d(-150%, 100%, 1.25px);
 }
 
 body.doneenter #bubbleseethewholeme{
-  transform: translate(-150%, -150%);
+  transform: translate3d(-150%, -150%, 1px);
 }
 
 body.doneenter #bubblegivemefairaccess{
-  transform: translate(-350%, 50%);
+  transform: translate3d(-350%, 50%, 1.5px);
 }
 
 body.doneenter #bubblewinbackmytrust {
-  transform: translate(200%, 50%);
+  transform: translate3d(200%, 50%, 0.5px);
 }
 
 body.doneexplore:not(.showframework) #bubbleisthereanappforthat {
