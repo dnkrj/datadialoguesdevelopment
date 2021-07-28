@@ -80,6 +80,7 @@ body {
 #messages li button {
   background: var(--button-color);
   color: var(--text-color);
+  margin: 20px 20px 9px;
 }
 
 #messages li.choice:hover {

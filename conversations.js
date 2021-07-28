@@ -1,3 +1,5 @@
+zenscroll.setup(0, 150)
+
 document.getElementById("buttontogglesound").addEventListener("click", () => {
   document.querySelectorAll("audio").forEach(a => a.volume = a.volume ? 0 : 1);
 }, false);
@@ -33,7 +35,7 @@ let showMessage = (i) => {
 	}
 	li.classList.add(message.type || "sent");
 	ol.appendChild(li);
-	ol.scrollIntoView({block: "end", behavior: "smooth"});
+	zenscroll.intoView(li, 1000);
 
 	if (!message.pause) {
 		let nextIndex = message.next || i + 1;
@@ -47,7 +49,7 @@ let showMessage = (i) => {
 	} else if(!message.choice) {
 		document.body.classList.remove("inprogress");
 		setTimeout(() => {
-			document.querySelector("article section p:first-child").scrollIntoView({block: "end", behavior: "smooth"})
+			zenscroll.intoView(document.querySelector("article section p:first-child"), 2000);
 			document.querySelectorAll("audio").forEach(a => a.volume = 0);
 		}, 2000);
 	};
