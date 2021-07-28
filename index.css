@@ -4,11 +4,6 @@ body {
   transition: all 2s;
 }
 
-body.transitioning {
-  opacity: 0;
-  transition: all 0.5s;
-}
-
 header, section, nav {
   position: fixed;
   top: 0;
