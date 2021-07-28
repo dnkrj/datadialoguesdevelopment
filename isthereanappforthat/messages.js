@@ -56,7 +56,6 @@ var messages = [{type: 'intro', text: "You are Skye, 21, in Inverness"}, {type: 
 	{text: "You really like being able to access your own data"},
 	{text: "Then you can take more control over your exercise"},
 	{text: "You enable sharing"},
-	{text: "Aye!"},
 	{type:'received', text: "We hope you’re loving our app!"},
 	{type:'received', text: "Please rate us"},
 	{choice: 63, pause: true, text: "I am!"},
