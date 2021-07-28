@@ -6,6 +6,16 @@ document.getElementById("buttontogglesound").addEventListener("click", () => {
 
 let firstChoice = true;
 
+function fadeOutAudio(audio){
+	if (audio.volume <= 0.01) {
+		audio.volume = 0;
+		return;
+	}
+
+	audio.volume = audio.volume - 0.01;
+	setTimeout(() => fadeOutAudio(audio), 30);
+}
+
 let showMessage = (i) => {
 	let message = messages[i];
 	let ol = document.getElementById("messages");
@@ -55,7 +65,8 @@ let showMessage = (i) => {
 		document.body.classList.remove("inprogress");
 		setTimeout(() => {
 			zenscroll.intoView(document.querySelector("article section p:first-child"), 2000);
-			document.querySelectorAll("audio").forEach(a => a.volume = 0);
+			document.querySelectorAll("audio").forEach(fadeOutAudio);
+			document.getElementById("buttontogglesound").remove();
 		}, 3000);
 	};
 
