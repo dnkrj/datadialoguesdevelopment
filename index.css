@@ -149,6 +149,7 @@ nav #navheader,
 
 body.doneexplore nav #navheader {
   display: inline-block;
+  max-width: 400px;
   animation: fadein 2s backwards;
 }
 
