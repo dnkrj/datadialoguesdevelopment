@@ -35,7 +35,12 @@ let showMessage = (i) => {
 	}
 	li.classList.add(message.type || "sent");
 	ol.appendChild(li);
+
 	zenscroll.intoView(li, 1000);
+
+	if (message.audio) {
+		document.querySelector(`audio#${message.audio}`).play();
+	}
 
 	if (!message.pause) {
 		let nextIndex = message.next || i + 1;
