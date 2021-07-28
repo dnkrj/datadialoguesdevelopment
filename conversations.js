@@ -39,8 +39,8 @@ let showMessage = (i) => {
 		let nextIndex = message.next || i + 1;
 		let showNext = () => showMessage(nextIndex);
 		if (!message.choice) {
-			let minPause = message.type == messages[nextIndex].type ? 1000 : 2000;
-			setTimeout(showNext, Math.max(message.text.length*15, minPause));
+			let minPause = message.type == messages[nextIndex].type ? 1200 : 2000;
+			setTimeout(showNext, Math.max(message.text.length*20, minPause));
 		} else {
 			showNext();
 		}
