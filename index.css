@@ -213,7 +213,7 @@ body.doneenter.doneexplore #bubblegivemefairaccess:hover,
 body.doneenter.doneexplore a:focus #bubblegivemefairaccess,
 body.doneenter.doneexplore #bubblewinbackmytrust:hover,
 body.doneenter.doneexplore a:focus #bubblewinbackmytrust {
-  transform: translate3d(-1%, -1%, 5px) scale(1.05);
+  transform: translate3d(-4%, -5%, 5px) scale(1.05);
   z-index: 1;
 }
 
