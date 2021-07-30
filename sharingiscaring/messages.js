@@ -28,7 +28,7 @@ var messages = [{type: 'intro', text: "You are Caleb, age 37, in Edinburgh"}, {t
 	{type:'received', text: "If we collect this data from enough people we might better understand how the area people live in affects people’s health differently"},
 	{type:'received', text: "Our health is affected by air pollution, outdoor space, and lots of other factors that are hard to measure"},
 	{choice: 32, text: "Who will it be shared with?"},
-	{choice: 37, pause: true, text: "Will it actually help people?"},
+	{choice: 36, pause: true, text: "Will it actually help people?"},
 	{text: "Wow that sounds like a great idea but who will my data be shared with?"},
 	{type:'received', text: "This is a study run by one of the city’s universities, but partnering with a private wearable company called Telehealth."},
 	{type:'received', text: "Your data won’t be shared beyond the partner company and you will actually get notifications telling you about any developments in the software that you helped to build"},
