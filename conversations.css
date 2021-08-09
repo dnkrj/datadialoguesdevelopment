@@ -10,10 +10,11 @@ body {
 }
 
 #messages {
+  box-sizing: border-box;
   width: 100vw;
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 0 0 auto;
-  padding: 150px;
+  padding: 150px max(30px, 9vw);
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
