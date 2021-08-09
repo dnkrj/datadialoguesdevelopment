@@ -143,7 +143,8 @@ body.doneexplore nav #bubbletakemebythehand {
 }
 
 nav #navheader,
-#buttons button {
+#buttons button,
+#buttons a.button {
   display: none;
 }
 
@@ -154,7 +155,8 @@ body.doneexplore nav #navheader {
 }
 
 body.doneenter #buttons #buttontogglesound,
-body.doneexplore #buttons button {
+body.doneexplore #buttons button,
+body.doneexplore #buttons a.button {
   display: inline-block;
   animation: fadeinup 0.5s backwards;
   animation-delay: 0.75s;
@@ -353,24 +355,26 @@ body.doneexplore:not(.showframework) #bubblewinbackmytrust {
 }
 
 #buttons {
+  display: flex;
   z-index: 2;
   position: absolute;
   right: 25px;
   bottom: 25px;
 }
 
-#buttons button {
+#buttons button,
+#buttons a.button, {
   margin: 5px;
 }
 
-body.doneexplore #buttons button:nth-child(2) {
+body.doneexplore #buttons #buttonfilter {
   animation-delay: 1s;
 }
 
-body.doneexplore #buttons button:nth-child(3) {
+body.doneexplore #buttons #buttontoggleframework {
   animation-delay: 1.25s;
 }
 
-body.doneexplore #buttons button:nth-child(4) {
+body.doneexplore #buttons #buttondownload {
   animation-delay: 1.5s;
 }

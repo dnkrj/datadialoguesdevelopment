@@ -185,3 +185,8 @@ nav ul a:focus {
   right: 10px;
   bottom: 10px;
 }
+
+#buttontogglesound.hide {
+  animation: fadeout 0.3s forwards;
+  pointer-events: none;
+}

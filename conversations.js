@@ -69,7 +69,9 @@ let showMessage = (i) => {
 		setTimeout(() => {
 			zenscroll.intoView(document.querySelector("article section p:first-child"), 2000);
 			document.querySelectorAll("audio").forEach(fadeOutAudio);
-			document.getElementById("buttontogglesound").remove();
+			let buttontogglesound = document.getElementById("buttontogglesound");
+			buttontogglesound.classList.add("hide");
+			setTimeout(buttontogglesound.remove, 300);
 		}, 3000);
 	};
 
