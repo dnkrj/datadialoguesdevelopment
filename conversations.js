@@ -26,7 +26,8 @@ let showMessage = (i) => {
 		li.addEventListener("click", function handler() {
 			this.removeEventListener('click', handler);
 			if (firstChoice) {
-				document.querySelectorAll("audio").forEach(a => a.play());
+				document.querySelector(`audio#loop`).play();
+				document.querySelector(`audio#intro`)?.play();
 				firstChoice = false;
 			}
 			ol.querySelectorAll('.choice').forEach((e) => {
@@ -49,7 +50,9 @@ let showMessage = (i) => {
 	zenscroll.intoView(li, 1000);
 
 	if (message.audio) {
-		document.querySelector(`audio#${message.audio}`).play();
+		audio = document.querySelector(`audio#${message.audio}`);
+		audio.currentTime = 0;
+		audio.play();
 	}
 
 	if (!message.pause) {
