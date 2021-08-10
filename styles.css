@@ -106,6 +106,16 @@ a.button.toggle:hover {
   width: 189px;
 }
 
+#buttontogglesound #soundon,
+#buttontogglesound.muted #soundoff {
+  display: none;
+}
+
+#buttontogglesound.muted #soundon,
+#buttontogglesound #soundoff {
+  display: inline-block;
+}
+
 #buttonfilter:hover,
 #buttonfilter:focus {
   width: 197px;

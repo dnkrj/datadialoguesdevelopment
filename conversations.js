@@ -2,6 +2,7 @@ zenscroll.setup(0, 150)
 
 document.getElementById("buttontogglesound").addEventListener("click", () => {
   document.querySelectorAll("audio").forEach(a => a.volume = a.volume ? 0 : 1);
+  document.getElementById("buttontogglesound").classList.toggle('muted');
 }, false);
 
 let firstChoice = true;
