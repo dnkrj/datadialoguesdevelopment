@@ -348,8 +348,9 @@ body.doneexplore:not(.showframework) #bubblewinbackmytrust {
 
 #navheader {
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 0;
+  left: 0;
+  padding: 50px;
 }
 
 #navheader h2 {
@@ -361,13 +362,13 @@ body.doneexplore:not(.showframework) #bubblewinbackmytrust {
   display: flex;
   z-index: 2;
   position: absolute;
-  right: 25px;
-  bottom: 25px;
+  right: 30px;
+  bottom: 30px;
 }
 
 #buttons button,
-#buttons a.button, {
-  margin: 5px;
+#buttons a.button {
+  margin: 10px;
 }
 
 body.doneexplore #buttons #buttonfilter {
@@ -380,4 +381,30 @@ body.doneexplore #buttons #buttontoggleframework {
 
 body.doneexplore #buttons #buttondownload {
   animation-delay: 1.5s;
+}
+
+@media only screen and (max-width: 1000px) {
+  nav {
+    display: block;
+  }
+
+  #navheader {
+    position: relative;
+    padding: 0;
+  }
+
+  #map {
+    height: auto;
+    width: auto;
+    position: relative;
+  }
+
+  nav li {
+    position: relative;
+  }
+
+  body.doneexplore #buttons #buttontoggleframework,
+  #framework {
+    display: none;
+  }
 }
