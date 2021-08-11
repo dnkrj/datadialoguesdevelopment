@@ -397,6 +397,7 @@ body.doneexplore #buttons #buttondownload {
     height: auto;
     width: auto;
     position: relative;
+    padding: 30px 0 150px;
   }
 
   nav li {
@@ -405,6 +406,22 @@ body.doneexplore #buttons #buttondownload {
 
   body.doneexplore #buttons #buttontoggleframework,
   #framework {
+    display: none;
+  }
+
+  body.doneenter.doneexplore #bubbleisthereanappforthat,
+  body.doneenter.doneexplore #bubbletakemebythehand,
+  body.doneenter.doneexplore #bubblesharingiscaring,
+  body.doneenter.doneexplore #bubbleonmyterms,
+  body.doneenter.doneexplore #bubbleseethewholeme,
+  body.doneenter.doneexplore #bubblegivemefairaccess,
+  body.doneenter.doneexplore #bubblewinbackmytrust {
+    width: auto;
+    height: 80vw;
+    left: 0;
+  }
+
+  #frameworkexplanation {
     display: none;
   }
 }
