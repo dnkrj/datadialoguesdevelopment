@@ -31,8 +31,23 @@ document.querySelectorAll('li a').forEach((e) => {
 	}, false)
 });
 
+let perspectiveOriginX = 0;
+let perspectiveOriginY = 0;
+let pageX = window.innerWidth/2;
+let pageY = window.innerHeight/2;
+
 let map = document.getElementById("map");
-function updatePerspective(p){
-  map.style.perspectiveOrigin = `${window.innerWidth/2 - p.pageX}px ${window.innerHeight/2 - p.pageY}px`
+function updatePerspective(){
+  perspectiveOriginX = (19*perspectiveOriginX + window.innerWidth/2 - pageX)/20;
+  perspectiveOriginY = (19*perspectiveOriginY + window.innerHeight/2 - pageY)/20;
+  map.style.perspectiveOrigin = `${perspectiveOriginX}px ${perspectiveOriginY}px`;
+  window.requestAnimationFrame(updatePerspective);
 }
-addEventListener('mousemove', updatePerspective, false);
+window.requestAnimationFrame(updatePerspective);
+
+
+function updateP(event){
+  pageX = event.pageX;
+  pageY = event.pageY;
+}
+addEventListener('mousemove', updateP, false);
