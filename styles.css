@@ -96,7 +96,9 @@ a.button.toggle svg {
 }
 
 button.toggle:hover,
-a.button.toggle:hover {
+button.toggle:focus,
+a.button.toggle:hover,
+a.button.toggle:focus {
   color: white;
   width: auto;
 }

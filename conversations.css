@@ -142,10 +142,13 @@ article > nav {
   overflow: hidden;
   padding: 30px 0;
   margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 nav ul li {
-  margin: 30px;
+  margin: 30px 0;
   padding-left: 30%;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -159,12 +162,16 @@ nav ul a {
 nav ul a:hover,
 nav ul a:focus {
   text-decoration: underline;
-  text-decoration-color: black;
+  text-decoration-color: #002E56;
+}
+
+nav a.button {
+  width: auto;
 }
 
 .imagecontainer {
   position: absolute;
-  width: 30%;
+  width: 27%;
   top: -5px;
   left: 0;
   bottom: -5px;
