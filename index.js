@@ -1,3 +1,11 @@
+if(document.referrer.indexOf(window.location.hostname)!=-1) {
+  document.body.classList.add("doneenter");
+  document.body.classList.add("doneexplore");
+  document.querySelector("header").remove();
+  document.querySelector("section").remove();
+  document.querySelector("audio").play();
+}
+
 document.getElementById("buttonenter").addEventListener("click", () => {
   document.body.classList.add("doneenter");
   document.querySelector("audio").play();
