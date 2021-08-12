@@ -190,5 +190,6 @@ a:focus .imagecontainer {
 }
 
 body:not(.inprogress) #buttons {
-  display: none;
+  animation: fadeout 0.3s forwards;
+  pointer-events: none;
 }

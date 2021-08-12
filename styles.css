@@ -214,7 +214,5 @@ a.button.toggle:focus {
   #buttons {
     flex-direction: column;
     align-items: flex-end;
-    left: 30px;
-    right: auto;
   }
 }
