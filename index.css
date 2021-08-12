@@ -432,6 +432,6 @@ body.doneexplore #buttons #buttondownload {
   }
 
   header, section {
-    padding-top: calc(300px - 100vw);
+    padding-top: calc(600px - 100vw);
   }
 }
