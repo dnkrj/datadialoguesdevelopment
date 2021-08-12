@@ -81,7 +81,7 @@ body {
 #messages li button {
   background: var(--button-color);
   color: var(--text-color);
-  margin: 20px 20px 9px;
+  margin: 20px 10px 9px;
 }
 
 #messages li.choice:hover {
@@ -192,4 +192,12 @@ a:focus .imagecontainer {
 body:not(.inprogress) #buttons {
   animation: fadeout 0.3s forwards;
   pointer-events: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  #buttons {
+    flex-direction: column-reverse;
+    top: 30px;
+    bottom: auto;
+  }
 }
