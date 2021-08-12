@@ -364,6 +364,7 @@ body.doneexplore:not(.showframework) #bubblewinbackmytrust {
   position: absolute;
   right: 30px;
   bottom: 30px;
+  overflow: hidden;
 }
 
 #buttons button,
