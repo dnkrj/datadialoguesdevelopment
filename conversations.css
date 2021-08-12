@@ -171,9 +171,9 @@ nav a.button {
 
 .imagecontainer {
   position: absolute;
-  width: 27%;
+  width: 25%;
   top: -5px;
-  left: 0;
+  left: 2%;
   bottom: -5px;
   mask-size: contain;
   -webkit-mask-size: contain;
