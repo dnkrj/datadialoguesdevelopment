@@ -1,5 +1,7 @@
 body {
   background: #EBEBEB;
+  background-image: url("images/background.jpg");
+  background-size: cover;
   margin: 0;
   transition: all 2s;
 }

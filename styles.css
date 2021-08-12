@@ -137,6 +137,8 @@ a.button.toggle:focus {
   mask-image: url("images/bubbleisthereanappforthat.svg");
   -webkit-mask-image: url("images/bubbleisthereanappforthat.svg");
   background: var(--isthereanappforthat-color);
+  background-image: url("images/gradientisthereanappforthat.jpg");
+  background-size: cover;
 }
 
 
@@ -144,12 +146,16 @@ a.button.toggle:focus {
   mask-image: url("images/bubbletakemebythehand.svg");
   -webkit-mask-image: url("images/bubbletakemebythehand.svg");
   background: var(--takemebythehand-color);
+  background-image: url("images/gradienttakemebythehand.jpg");
+  background-size: cover;
 }
 
 #bubblesharingiscaring {
   mask-image: url("images/bubblesharingiscaring.svg");
   -webkit-mask-image: url("images/bubblesharingiscaring.svg");
   background: var(--sharingiscaring-color);
+  background-image: url("images/gradientsharingiscaring.jpg");
+  background-size: cover;
 }
 
 
@@ -157,22 +163,30 @@ a.button.toggle:focus {
   mask-image: url("images/bubbleonmyterms.svg");
   -webkit-mask-image: url("images/bubbleonmyterms.svg");
   background: var(--onmyterms-color);
+  background-image: url("images/gradientonmyterms.jpg");
+  background-size: cover;
 }
 
 #bubbleseethewholeme {
   mask-image: url("images/bubbleseethewholeme.svg");
   -webkit-mask-image: url("images/bubbleseethewholeme.svg");
   background: var(--seethewholeme-color);
+  background-image: url("images/gradientseethewholeme.jpg");
+  background-size: cover;
 }
 
 #bubblegivemefairaccess {
   mask-image: url("images/bubblegivemefairaccess.svg");
   -webkit-mask-image: url("images/bubblegivemefairaccess.svg");
   background: var(--givemefairaccess-color);
+  background-image: url("images/gradientgivemefairaccess.jpg");
+  background-size: cover;
 }
 
 #bubblewinbackmytrust {
   mask-image: url("images/bubblewinbackmytrust.svg");
   -webkit-mask-image: url("images/bubblewinbackmytrust.svg");
   background: var(--winbackmytrust-color);
+  background-image: url("images/gradientwinbackmytrust.jpg");
+  background-size: cover;
 }
