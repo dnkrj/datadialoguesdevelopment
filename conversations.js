@@ -20,7 +20,10 @@ function fadeOutAudio(audio){
 }
 
 function endconversation() {
-	document.querySelectorAll('.choice').forEach(e => e.remove());
+	document.querySelectorAll('.choice').forEach((e) => {
+		e.classList.add("quickhide");
+		setTimeout(e.remove, 300);
+	});
 	document.body.classList.remove("inprogress");
 	zenscroll.intoView(document.querySelector("article section p:first-child"), 2000);
 	document.querySelectorAll("audio").forEach(fadeOutAudio);
