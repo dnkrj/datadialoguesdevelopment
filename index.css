@@ -397,7 +397,7 @@ body.doneexplore #buttons #buttondownload {
     height: auto;
     width: auto;
     position: relative;
-    padding: 30px 0 150px;
+    padding: 0 0 150px;
   }
 
   nav li {
