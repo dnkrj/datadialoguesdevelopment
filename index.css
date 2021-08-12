@@ -415,13 +415,13 @@ body.doneexplore #buttons #buttondownload {
     align-items: flex-end;
   }
 
-  body.doneenter.doneexplore #bubbleisthereanappforthat,
-  body.doneenter.doneexplore #bubbletakemebythehand,
-  body.doneenter.doneexplore #bubblesharingiscaring,
-  body.doneenter.doneexplore #bubbleonmyterms,
-  body.doneenter.doneexplore #bubbleseethewholeme,
-  body.doneenter.doneexplore #bubblegivemefairaccess,
-  body.doneenter.doneexplore #bubblewinbackmytrust {
+  #bubbleisthereanappforthat,
+  #bubbletakemebythehand,
+  #bubblesharingiscaring,
+  #bubbleonmyterms,
+  #bubbleseethewholeme,
+  #bubblegivemefairaccess,
+  #bubblewinbackmytrust {
     width: auto;
     height: 80vw;
     left: 0;
