@@ -409,6 +409,11 @@ body.doneexplore #buttons #buttondownload {
     display: none;
   }
 
+  #buttons {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
   body.doneenter.doneexplore #bubbleisthereanappforthat,
   body.doneenter.doneexplore #bubbletakemebythehand,
   body.doneenter.doneexplore #bubblesharingiscaring,
