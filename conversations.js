@@ -5,6 +5,8 @@ document.getElementById("buttontogglesound").addEventListener("click", () => {
   document.getElementById("buttontogglesound").classList.toggle('muted');
 }, false);
 
+document.getElementById("buttonskipconversation").addEventListener("click", endconversation, false);
+
 let firstChoice = true;
 
 function fadeOutAudio(audio){
@@ -17,6 +19,13 @@ function fadeOutAudio(audio){
 	setTimeout(() => fadeOutAudio(audio), 30);
 }
 
+function endconversation() {
+	document.body.classList.remove("inprogress");
+	zenscroll.intoView(document.querySelector("article section p:first-child"), 2000);
+	document.querySelectorAll("audio").forEach(fadeOutAudio);
+	document.getElementById("buttontogglesound").classList.toggle('muted');
+}
+
 let showMessage = (i) => {
 	let message = messages[i];
 	let ol = document.getElementById("messages");
@@ -25,6 +34,7 @@ let showMessage = (i) => {
 		let button = document.createElement("button");
 		button.type = "button";
 		li.addEventListener("click", function handler() {
+			document.body.classList.add("inprogress");
 			this.removeEventListener('click', handler);
 			if (firstChoice) {
 				document.querySelector(`audio#loop`).play();
@@ -48,7 +58,9 @@ let showMessage = (i) => {
 	li.classList.add(message.type || "sent");
 	ol.appendChild(li);
 
-	zenscroll.intoView(li, 1000);
+	if (document.body.classList.contains("inprogress")) {
+		zenscroll.intoView(li, 1000);
+	}
 
 	if (message.audio) {
 		audio = document.querySelector(`audio#${message.audio}`);
@@ -68,11 +80,7 @@ let showMessage = (i) => {
 	} else if(!message.choice) {
 		document.body.classList.remove("inprogress");
 		setTimeout(() => {
-			zenscroll.intoView(document.querySelector("article section p:first-child"), 2000);
-			document.querySelectorAll("audio").forEach(fadeOutAudio);
-			let buttontogglesound = document.getElementById("buttontogglesound");
-			buttontogglesound.classList.add("hide");
-			setTimeout(buttontogglesound.remove, 300);
+			endconversation();
 		}, 3000);
 	};
 

@@ -189,13 +189,6 @@ a:focus .imagecontainer {
   transform: scale(1.1);
 }
 
-#buttontogglesound {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-}
-
-#buttontogglesound.hide {
-  animation: fadeout 0.3s forwards;
-  pointer-events: none;
+body:not(.inprogress) #buttons {
+  display: none;
 }

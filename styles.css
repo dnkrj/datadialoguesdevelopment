@@ -133,6 +133,11 @@ a.button.toggle:focus {
   width: 226px;
 }
 
+#buttonskipconversation:hover,
+#buttonskipconversation:focus {
+  width: 229px;
+}
+
 #bubbleisthereanappforthat {
   mask-image: url("images/bubbleisthereanappforthat.svg");
   -webkit-mask-image: url("images/bubbleisthereanappforthat.svg");
@@ -189,4 +194,27 @@ a.button.toggle:focus {
   background: var(--winbackmytrust-color);
   background-image: url("images/gradientwinbackmytrust.jpg");
   background-size: cover;
+}
+
+#buttons {
+  display: flex;
+  z-index: 2;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  overflow: hidden;
+}
+
+#buttons button,
+#buttons a.button {
+  margin: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  #buttons {
+    flex-direction: column;
+    align-items: flex-end;
+    left: 30px;
+    right: auto;
+  }
 }

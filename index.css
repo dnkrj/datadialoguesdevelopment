@@ -360,20 +360,6 @@ body.doneexplore:not(.showframework) #bubblewinbackmytrust {
   margin-bottom: 12px;
 }
 
-#buttons {
-  display: flex;
-  z-index: 2;
-  position: absolute;
-  right: 30px;
-  bottom: 30px;
-  overflow: hidden;
-}
-
-#buttons button,
-#buttons a.button {
-  margin: 10px;
-}
-
 body.doneexplore #buttons #buttonfilter {
   animation-delay: 1s;
 }
@@ -410,11 +396,6 @@ body.doneexplore #buttons #buttondownload {
   body.doneexplore #buttons #buttontoggleframework,
   #framework {
     display: none;
-  }
-
-  #buttons {
-    flex-direction: column;
-    align-items: flex-end;
   }
 
   #bubbleisthereanappforthat,
