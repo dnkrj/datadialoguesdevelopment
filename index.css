@@ -430,4 +430,8 @@ body.doneexplore #buttons #buttondownload {
   #frameworkexplanation {
     display: none;
   }
+
+  header, section {
+    padding-top: calc(300px - 100vw);
+  }
 }
