@@ -27,6 +27,10 @@ document.getElementById("buttontoggleframework").addEventListener("click", () =>
   document.body.classList.toggle("showframework");
 }, false);
 
+document.querySelector('#buttonfilter select').addEventListener('change', (event) => {
+  document.body.dataset.filter = event.target.value;
+});
+
 document.querySelectorAll('li a').forEach((e) => {
 	e.addEventListener('click', (e) => {
 		document.body.classList.add('transitioning');

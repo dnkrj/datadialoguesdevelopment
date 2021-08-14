@@ -50,7 +50,7 @@ a {
 }
 
 button,
-a.button {
+.button {
   background: #0067C3;
   color: white;
   font-family: "Averta-Regular";
@@ -69,8 +69,8 @@ a.button {
 
 button:hover,
 button:focus,
-a.button:hover,
-a.button:focus {
+.button:hover,
+.button:focus {
   outline: none;
   transform: scale(1.05);
   background: #002E56;
@@ -78,7 +78,7 @@ a.button:focus {
 }
 
 button.toggle,
-a.button.toggle {
+.button.toggle {
   width: 0;
   overflow: hidden;
   white-space: nowrap;
@@ -86,7 +86,7 @@ a.button.toggle {
 }
 
 button.toggle svg,
-a.button.toggle svg {
+.button.toggle svg {
   height: 24px;
   width: 24px;
   fill: white;
@@ -97,8 +97,9 @@ a.button.toggle svg {
 
 button.toggle:hover,
 button.toggle:focus,
-a.button.toggle:hover,
-a.button.toggle:focus {
+.button.toggle:hover,
+.button.toggle:focus,
+body:not([data-filter=""]) #buttonfilter {
   color: white;
   width: auto;
 }
@@ -118,9 +119,13 @@ a.button.toggle:focus {
   display: inline-block;
 }
 
-#buttonfilter:hover,
-#buttonfilter:focus {
-  width: 197px;
+body[data-filter=""] #buttonfilter:hover,
+body[data-filter=""] #buttonfilter:focus {
+  width: 138px;
+}
+
+body:not([data-filter=""]) #buttonfilter {
+  width: 281px;
 }
 
 #buttondownload:hover,
@@ -136,6 +141,18 @@ a.button.toggle:focus {
 #buttonskipconversation:hover,
 #buttonskipconversation:focus {
   width: 229px;
+}
+
+select {
+  background: transparent;
+  color: currentcolor;
+  border: none;
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  font: inherit;
+  margin: 0;
+  cursor: pointer;
 }
 
 #bubbleisthereanappforthat {
@@ -206,7 +223,7 @@ a.button.toggle:focus {
 }
 
 #buttons button,
-#buttons a.button {
+#buttons .button {
   margin: 10px;
 }
 
