@@ -4,7 +4,3 @@
   --text-color: var(--seethewholeme-text-color);
   --conversation-color: var(--seethewholeme-text-color);
 }
-
-body {
-  background-image: url('../images/backgroundseethewholeme.jpg');
-}

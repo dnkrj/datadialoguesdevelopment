@@ -91,3 +91,24 @@ let showMessage = (i) => {
 }
 
 showMessage(0)
+
+let perspectiveOriginX = 0;
+let perspectiveOriginY = 0;
+let pageX = window.innerWidth/2;
+let pageY = window.innerHeight/2;
+
+let map = document.getElementById("backgroundcontainer");
+function updatePerspective(){
+  perspectiveOriginX = (19*perspectiveOriginX + window.innerWidth/2 - pageX)/20;
+  perspectiveOriginY = (19*perspectiveOriginY + window.innerHeight/2 - pageY)/20;
+  map.style.perspectiveOrigin = `${perspectiveOriginX}px ${perspectiveOriginY}px`;
+  window.requestAnimationFrame(updatePerspective);
+}
+window.requestAnimationFrame(updatePerspective);
+
+
+function updateP(event){
+  pageX = event.pageX;
+  pageY = event.pageY;
+}
+addEventListener('mousemove', updateP, false);

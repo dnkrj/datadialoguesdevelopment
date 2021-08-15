@@ -4,7 +4,3 @@
   --text-color: var(--givemefairaccess-text-color);
   --conversation-color: var(--givemefairaccess-text-color);
 }
-
-body {
-  background-image: url('../images/backgroundgivemefairaccess.jpg');
-}

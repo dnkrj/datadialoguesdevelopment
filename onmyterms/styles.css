@@ -4,7 +4,3 @@
   --text-color: var(--onmyterms-text-color);
   --conversation-color: black;
 }
-
-body {
-  background-image: url('../images/backgroundonmyterms.jpg');
-}

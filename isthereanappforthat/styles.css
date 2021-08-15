@@ -4,7 +4,3 @@
   --text-color: var(--isthereanappforthat-text-color);
   --conversation-color: var(--isthereanappforthat-text-color);
 }
-
-body {
-  background-image: url('../images/backgroundisthereanappforthat.jpg');
-}
