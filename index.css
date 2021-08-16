@@ -320,42 +320,6 @@ body.doneenter #bubblewinbackmytrust {
   transform: translate3d(200%, 50%, 0.5px);
 }
 
-body.doneexplore:not([data-filter=""]) #bubbleisthereanappforthat,
-body.doneexplore:not(.showframework) #bubbleisthereanappforthat {
-  left: -15%;
-  top: 84%;
-}
-
-body.doneexplore:not([data-filter=""]) #bubbletakemebythehand,
-body.doneexplore:not(.showframework) #bubbletakemebythehand {
-  left: 80%;
-  top: 34%;
-}
-
-body.doneexplore:not([data-filter=""]) #bubblesharingiscaring,
-body.doneexplore:not(.showframework) #bubblesharingiscaring {
-  left: 16%;
-  top: -20%;
-}
-
-body.doneexplore:not([data-filter=""]) #bubbleonmyterms,
-body.doneexplore:not(.showframework) #bubbleonmyterms {
-  left: 31%;
-  top: 85%;
-}
-
-body.doneexplore:not([data-filter=""]) #bubblegivemefairaccess,
-body.doneexplore:not(.showframework) #bubblegivemefairaccess {
-  left: -18%;
-  top: 32%;
-}
-
-body.doneexplore:not([data-filter=""]) #bubblewinbackmytrust,
-body.doneexplore:not(.showframework) #bubblewinbackmytrust {
-  left: 80%;
-  top: 73%;
-}
-
 #navheader {
   position: absolute;
   top: 0;
@@ -380,60 +344,98 @@ body.doneexplore #buttons #buttondownload {
   animation-delay: 1.5s;
 }
 
-body.doneexplore[data-filter="youngpeople"] #bubblegivemefairaccess,
-body.doneexplore[data-filter="youngpeople"] #bubbletakemebythehand,
-body.doneexplore[data-filter="olderpeople"] #bubbleseethewholeme,
-body.doneexplore[data-filter="olderpeople"] #bubbleisthereanappforthat,
-body.doneexplore[data-filter="lgbtqgroups"] #bubblegivemefairaccess,
-body.doneexplore[data-filter="peopleonbenefits"] #bubbleisthereanappforthat,
-body.doneexplore[data-filter="peopleonbenefits"] #bubblesharingiscaring {
-  transform: scale(0.5);
-}
+@media only screen and (min-width: 1001px) {
+  body.doneexplore:not([data-filter=""]) #bubbleisthereanappforthat,
+  body.doneexplore:not(.showframework) #bubbleisthereanappforthat {
+    left: -15%;
+    top: 84%;
+  }
 
-body.doneexplore[data-filter="youngpeople"] #bubbleonmyterms,
-body.doneexplore[data-filter="youngpeople"] #bubblewinbackmytrust,
-body.doneexplore[data-filter="olderpeople"] #bubblegivemefairaccess,
-body.doneexplore[data-filter="peoplewithdisabilities"] #bubbleonmyterms,
-body.doneexplore[data-filter="peoplewithdisabilities"] #bubbleseethewholeme,
-body.doneexplore[data-filter="peoplewithcareneeds"] #bubbleonmyterms,
-body.doneexplore[data-filter="peoplewithcareneeds"] #bubblesharingiscaring,
-body.doneexplore[data-filter="peoplewithamedicalcondition"] #bubbleisthereanappforthat,
-body.doneexplore[data-filter="peoplewithamedicalcondition"] #bubbletakemebythehand,
-body.doneexplore[data-filter="minoritygroups"] #bubbleseethewholeme,
-body.doneexplore[data-filter="minoritygroups"] #bubbleisthereanappforthat,
-body.doneexplore[data-filter="peopleonbenefits"] #bubbleseethewholeme,
-body.doneexplore[data-filter="peopleonbenefits"] #bubblesharingiscaring,
-body.doneexplore[data-filter="generalpublic"] #bubblegivemefairaccess,
-body.doneexplore[data-filter="generalpublic"] #bubblewinbackmytrust {
-  transform: scale(0.75);
-}
+  body.doneexplore:not([data-filter=""]) #bubbletakemebythehand,
+  body.doneexplore:not(.showframework) #bubbletakemebythehand {
+    left: 80%;
+    top: 34%;
+  }
 
-body.doneexplore[data-filter="youngpeople"] #bubblesharingiscaring,
-body.doneexplore[data-filter="olderpeople"] #bubbleonmyterms,
-body.doneexplore[data-filter="peoplewithdisabilities"] #bubbleisthereanappforthat,
-body.doneexplore[data-filter="peoplewithdisabilities"] #bubbletakemebythehand,
-body.doneexplore[data-filter="peoplewithcareneeds"] #bubbletakemebythehand,
-body.doneexplore[data-filter="peoplewithamedicalcondition"] #bubblegivemefairaccess,
-body.doneexplore[data-filter="peoplewithamedicalcondition"] #bubbleseethewholeme,
-body.doneexplore[data-filter="minoritygroups"] #bubbletakemebythehand,
-body.doneexplore[data-filter="generalpublic"] #bubbleonmyterms,
-body.doneexplore[data-filter="generalpublic"] #bubblesharingiscaring {
-  transform: scale(1.25);
-}
+  body.doneexplore:not([data-filter=""]) #bubblesharingiscaring,
+  body.doneexplore:not(.showframework) #bubblesharingiscaring {
+    left: 16%;
+    top: -20%;
+  }
 
-body.doneexplore[data-filter="youngpeople"] #bubbleseethewholeme,
-body.doneexplore[data-filter="youngpeople"] #bubbleisthereanappforthat,
-body.doneexplore[data-filter="olderpeople"] #bubbletakemebythehand,
-body.doneexplore[data-filter="peoplewithdisabilities"] #bubblegivemefairaccess,
-body.doneexplore[data-filter="peoplewithcareneeds"] #bubblegivemefairaccess,
-body.doneexplore[data-filter="peoplewithcareneeds"] #bubblewinbackmytrust,
-body.doneexplore[data-filter="peoplewithamedicalcondition"] #bubblesharingiscaring,
-body.doneexplore[data-filter="lgbtqgroups"] #bubbleseethewholeme,
-body.doneexplore[data-filter="lgbtqgroups"] #bubbletakemebythehand,
-body.doneexplore[data-filter="lgbtqgroups"] #bubblesharingiscaring,
-body.doneexplore[data-filter="minoritygroups"] #bubblewinbackmytrust,
-body.doneexplore[data-filter="peopleonbenefits"] #bubblewinbackmytrust {
-  transform: scale(1.5);
+  body.doneexplore:not([data-filter=""]) #bubbleonmyterms,
+  body.doneexplore:not(.showframework) #bubbleonmyterms {
+    left: 31%;
+    top: 85%;
+  }
+
+  body.doneexplore:not([data-filter=""]) #bubblegivemefairaccess,
+  body.doneexplore:not(.showframework) #bubblegivemefairaccess {
+    left: -18%;
+    top: 32%;
+  }
+
+  body.doneexplore:not([data-filter=""]) #bubblewinbackmytrust,
+  body.doneexplore:not(.showframework) #bubblewinbackmytrust {
+    left: 80%;
+    top: 73%;
+  }
+
+  body.doneexplore[data-filter="youngpeople"] #bubblegivemefairaccess,
+  body.doneexplore[data-filter="youngpeople"] #bubbletakemebythehand,
+  body.doneexplore[data-filter="olderpeople"] #bubbleseethewholeme,
+  body.doneexplore[data-filter="olderpeople"] #bubbleisthereanappforthat,
+  body.doneexplore[data-filter="lgbtqgroups"] #bubblegivemefairaccess,
+  body.doneexplore[data-filter="peopleonbenefits"] #bubbleisthereanappforthat,
+  body.doneexplore[data-filter="peopleonbenefits"] #bubblesharingiscaring {
+    transform: scale(0.5);
+  }
+
+  body.doneexplore[data-filter="youngpeople"] #bubbleonmyterms,
+  body.doneexplore[data-filter="youngpeople"] #bubblewinbackmytrust,
+  body.doneexplore[data-filter="olderpeople"] #bubblegivemefairaccess,
+  body.doneexplore[data-filter="peoplewithdisabilities"] #bubbleonmyterms,
+  body.doneexplore[data-filter="peoplewithdisabilities"] #bubbleseethewholeme,
+  body.doneexplore[data-filter="peoplewithcareneeds"] #bubbleonmyterms,
+  body.doneexplore[data-filter="peoplewithcareneeds"] #bubblesharingiscaring,
+  body.doneexplore[data-filter="peoplewithamedicalcondition"] #bubbleisthereanappforthat,
+  body.doneexplore[data-filter="peoplewithamedicalcondition"] #bubbletakemebythehand,
+  body.doneexplore[data-filter="minoritygroups"] #bubbleseethewholeme,
+  body.doneexplore[data-filter="minoritygroups"] #bubbleisthereanappforthat,
+  body.doneexplore[data-filter="peopleonbenefits"] #bubbleseethewholeme,
+  body.doneexplore[data-filter="peopleonbenefits"] #bubblesharingiscaring,
+  body.doneexplore[data-filter="generalpublic"] #bubblegivemefairaccess,
+  body.doneexplore[data-filter="generalpublic"] #bubblewinbackmytrust {
+    transform: scale(0.75);
+  }
+
+  body.doneexplore[data-filter="youngpeople"] #bubblesharingiscaring,
+  body.doneexplore[data-filter="olderpeople"] #bubbleonmyterms,
+  body.doneexplore[data-filter="peoplewithdisabilities"] #bubbleisthereanappforthat,
+  body.doneexplore[data-filter="peoplewithdisabilities"] #bubbletakemebythehand,
+  body.doneexplore[data-filter="peoplewithcareneeds"] #bubbletakemebythehand,
+  body.doneexplore[data-filter="peoplewithamedicalcondition"] #bubblegivemefairaccess,
+  body.doneexplore[data-filter="peoplewithamedicalcondition"] #bubbleseethewholeme,
+  body.doneexplore[data-filter="minoritygroups"] #bubbletakemebythehand,
+  body.doneexplore[data-filter="generalpublic"] #bubbleonmyterms,
+  body.doneexplore[data-filter="generalpublic"] #bubblesharingiscaring {
+    transform: scale(1.25);
+  }
+
+  body.doneexplore[data-filter="youngpeople"] #bubbleseethewholeme,
+  body.doneexplore[data-filter="youngpeople"] #bubbleisthereanappforthat,
+  body.doneexplore[data-filter="olderpeople"] #bubbletakemebythehand,
+  body.doneexplore[data-filter="peoplewithdisabilities"] #bubblegivemefairaccess,
+  body.doneexplore[data-filter="peoplewithcareneeds"] #bubblegivemefairaccess,
+  body.doneexplore[data-filter="peoplewithcareneeds"] #bubblewinbackmytrust,
+  body.doneexplore[data-filter="peoplewithamedicalcondition"] #bubblesharingiscaring,
+  body.doneexplore[data-filter="lgbtqgroups"] #bubbleseethewholeme,
+  body.doneexplore[data-filter="lgbtqgroups"] #bubbletakemebythehand,
+  body.doneexplore[data-filter="lgbtqgroups"] #bubblesharingiscaring,
+  body.doneexplore[data-filter="minoritygroups"] #bubblewinbackmytrust,
+  body.doneexplore[data-filter="peopleonbenefits"] #bubblewinbackmytrust {
+    transform: scale(1.5);
+  }
 }
 
 @media only screen and (max-width: 1000px) {
