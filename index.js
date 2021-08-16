@@ -4,7 +4,13 @@ if(sessionStorage.getItem('doneexplore')) {
     document.body.classList.add("doneexplore");
     document.querySelector("header").remove();
     document.querySelector("section").remove();
-    document.querySelector("audio").play();
+    document.querySelector("audio").play().catch(() => {
+      document.querySelector("audio").volume = 0;
+      document.getElementById("buttontogglesound").classList.add('muted');
+      document.getElementById("buttontogglesound").addEventListener("click", () => {
+        document.querySelector("audio").play();
+      }, false);
+    });
   }
 }
 
@@ -22,6 +28,7 @@ document.getElementById("buttonexplore").addEventListener("click", () => {
 
 document.getElementById("buttontogglesound").addEventListener("click", () => {
   document.querySelector("audio").volume = document.querySelector("audio").volume ? 0 : 1;
+  document.getElementById("buttontogglesound").classList.toggle('muted');
 }, false);
 
 document.getElementById("buttontoggleframework").addEventListener("click", () => {
