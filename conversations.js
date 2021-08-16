@@ -1,10 +1,17 @@
 zenscroll.setup(0, 150)
 
+window.addEventListener('load', () => {
+  document.querySelector("audio").volume = 0;
+  if (document.querySelector("audio").volume) {
+    body.classList.add('novolumecontrol');
+  } else {
+    document.querySelector("audio").volume = 1;
+  }
+});
 
 if(localStorage.getItem("canskip")) {
 	document.body.classList.add("canskip");
 }
-
 
 document.getElementById("buttontogglesound").addEventListener("click", () => {
   document.querySelectorAll("audio").forEach(a => a.volume = a.volume ? 0 : 1);
@@ -16,6 +23,11 @@ document.getElementById("buttonskipconversation").addEventListener("click", endc
 let firstChoice = true;
 
 function fadeOutAudio(audio){
+	if (document.body.classList.contains('novolumecontrol')) {
+		audio.pause();
+		return;
+	}
+
 	if (audio.volume <= 0.01) {
 		audio.volume = 0;
 		return;

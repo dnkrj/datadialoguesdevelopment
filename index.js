@@ -1,5 +1,14 @@
+window.addEventListener('load', () => {
+  document.querySelector("audio").volume = 0;
+  if (document.querySelector("audio").volume) {
+    body.classList.add('novolumecontrol');
+  } else {
+    document.querySelector("audio").volume = 1;
+  }
+});
+
 if(sessionStorage.getItem('doneexplore')) {
-  window.onload = () => {
+  window.addEventListener('load', () => {
     document.body.classList.add("doneenter");
     document.body.classList.add("doneexplore");
     document.querySelector("header").remove();
@@ -11,7 +20,7 @@ if(sessionStorage.getItem('doneexplore')) {
         document.querySelector("audio").play();
       }, false);
     });
-  }
+  });
 }
 
 document.getElementById("buttonenter").addEventListener("click", () => {

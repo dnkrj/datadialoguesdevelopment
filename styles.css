@@ -109,6 +109,10 @@ body:not([data-filter=""]) #buttonfilter {
   width: 189px;
 }
 
+body.noaudiocontrol #buttontogglesound {
+  display: none;
+}
+
 #buttontogglesound #soundon,
 #buttontogglesound.muted #soundoff {
   display: none;
