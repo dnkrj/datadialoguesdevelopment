@@ -1,4 +1,4 @@
-if(document.referrer.indexOf(window.location.hostname)!=-1) {
+if(sessionStorage.getItem('doneexplore')) {
   window.onload = () => {
     document.body.classList.add("doneenter");
     document.body.classList.add("doneexplore");
@@ -17,6 +17,7 @@ document.getElementById("buttonenter").addEventListener("click", () => {
 document.getElementById("buttonexplore").addEventListener("click", () => {
   document.body.classList.add("doneexplore");
   setTimeout(() => document.querySelector("section").remove(), 500);
+  sessionStorage.setItem('doneexplore', 'doneexplore');
 }, false);
 
 document.getElementById("buttontogglesound").addEventListener("click", () => {

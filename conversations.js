@@ -1,5 +1,11 @@
 zenscroll.setup(0, 150)
 
+
+if(localStorage.getItem("canskip")) {
+	document.body.classList.add("canskip");
+}
+
+
 document.getElementById("buttontogglesound").addEventListener("click", () => {
   document.querySelectorAll("audio").forEach(a => a.volume = a.volume ? 0 : 1);
   document.getElementById("buttontogglesound").classList.toggle('muted');
@@ -28,6 +34,7 @@ function endconversation() {
 	zenscroll.intoView(document.querySelector("article section p:first-child"), 2000);
 	document.querySelectorAll("audio").forEach(fadeOutAudio);
 	setTimeout(document.getElementById("buttons").remove, 300);
+	localStorage.setItem("canskip", "canskip");
 }
 
 let showMessage = (i) => {
