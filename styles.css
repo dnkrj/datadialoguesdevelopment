@@ -197,6 +197,10 @@ select {
   background-size: cover;
 }
 
+#bubbleseethewholeme:hover {
+  background-image: url("images/windowseethewholeme.jpg");
+}
+
 #bubblegivemefairaccess {
   mask-image: url("images/bubblegivemefairaccess.svg");
   -webkit-mask-image: url("images/bubblegivemefairaccess.svg");
