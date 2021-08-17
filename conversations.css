@@ -29,11 +29,11 @@ body {
 }
 
 #backgroundcontainer img:nth-child(3) {
-  transform: translate3d(0, 0, 3px);
+  transform: translate3d(-1%, -1%, 3px) scale(0.97);
 }
 
 #backgroundcontainer img:nth-child(4) {
-  transform: translate3d(0, 0, 4px);
+  transform: translate3d(-1.3%, -1.3%, 4px) scale(0.96);
 }
 
 
@@ -60,7 +60,7 @@ body {
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
-  color: black;
+  color: var(--conversation-color);
   transition: all 2s ease;
   white-space: pre-wrap;
 }
@@ -86,11 +86,13 @@ body {
 #messages li.received.fade {
   opacity: 0.8;
   transform: scale(0.9) translate(6%);
+  filter: blur(1px);
 }
 
 #messages li.sent.fade {
   opacity: 0.8;
   transform: scale(0.9) translate(-6%);
+  filter: blur(1px);
 }
 
 #messages li.choice {
@@ -139,7 +141,7 @@ article > nav > * {
 }
 
 article > header p {
-  color: black;
+  color: var(--conversation-color);
   font-family: "Averta-Bold";
   font-size: 14px;
   text-transform: uppercase;
@@ -148,7 +150,7 @@ article > header p {
 }
 
 article > header h1 {
-  color: black;
+  color: var(--conversation-color);
   margin-bottom: 0;
 }
 

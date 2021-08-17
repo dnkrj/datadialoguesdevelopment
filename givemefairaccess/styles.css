@@ -2,5 +2,5 @@
   --button-color: var(--givemefairaccess-color);
   --background-color: var(--givemefairaccess-background-color);
   --text-color: var(--givemefairaccess-text-color);
-  --conversation-color: var(--givemefairaccess-text-color);
+  --conversation-color: var(--givemefairaccess-conversation-color);
 }

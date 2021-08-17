@@ -2,5 +2,5 @@
   --button-color: var(--seethewholeme-color);
   --background-color: var(--seethewholeme-background-color);
   --text-color: var(--seethewholeme-text-color);
-  --conversation-color: var(--seethewholeme-text-color);
+  --conversation-color: var(--seethewholeme-conversation-color);
 }

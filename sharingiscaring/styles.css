@@ -2,7 +2,7 @@
   --button-color: var(--sharingiscaring-color);
   --background-color: var(--sharingiscaring-background-color);
   --text-color: var(--sharingiscaring-text-color);
-  --conversation-color: var(--sharingiscaring-text-color);
+  --conversation-color: var(--sharingiscaring-conversation-color);
 }
 
 body {

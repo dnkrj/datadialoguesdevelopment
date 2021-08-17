@@ -2,7 +2,7 @@
   --button-color: var(--winbackmytrust-color);
   --background-color: var(--winbackmytrust-background-color);
   --text-color: var(--winbackmytrust-text-color);
-  --conversation-color: var(--winbackmytrust-text-color);
+  --conversation-color: var(--winbackmytrust-conversation-color);
 }
 
 body {

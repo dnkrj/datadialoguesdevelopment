@@ -2,5 +2,5 @@
   --button-color: var(--onmyterms-color);
   --background-color: var(--onmyterms-background-color);
   --text-color: var(--onmyterms-text-color);
-  --conversation-color: black;
+  --conversation-color: var(--onmyterms-conversation-color);
 }

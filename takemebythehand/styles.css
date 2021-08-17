@@ -2,7 +2,7 @@
   --button-color: var(--takemebythehand-color);
   --background-color: var(--takemebythehand-background-color);
   --text-color: var(--takemebythehand-text-color);
-  --conversation-color: var(--takemebythehand-text-color);
+  --conversation-color: var(--takemebythehand-conversation-color);
 }
 
 body {
