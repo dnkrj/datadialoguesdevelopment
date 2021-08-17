@@ -1,4 +1,4 @@
-zenscroll.setup(0, 150)
+zenscroll.setup(0, 250)
 
 window.addEventListener('load', () => {
   document.querySelector("audio").volume = 0;
