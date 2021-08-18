@@ -4,3 +4,7 @@
   --text-color: var(--onmyterms-text-color);
   --conversation-color: var(--onmyterms-conversation-color);
 }
+
+#backgroundcontainer img:nth-child(2) {
+  transform: translate3d(0, 0, 2px) rotateX(0.3deg) scaleY(0.97);
+}

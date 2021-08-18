@@ -221,6 +221,10 @@ select {
   background-size: cover;
 }
 
+#bubblewinbackmytrust:hover {
+  background-image: url("images/windowwinbackmytrust.jpg");
+}
+
 #buttons {
   display: flex;
   z-index: 2;
