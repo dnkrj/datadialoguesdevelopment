@@ -4,3 +4,15 @@
   --text-color: var(--givemefairaccess-text-color);
   --conversation-color: var(--givemefairaccess-conversation-color);
 }
+
+#backgroundcontainer img:nth-child(2) {
+  transform: translate3d(0, 0, 2px) scale(1.02);
+}
+
+#backgroundcontainer img:nth-child(3) {
+  transform: translate3d(-1%, -1%, 3px);
+}
+
+#backgroundcontainer img:nth-child(4) {
+  transform: translate3d(-1.3%, -1.3%, 4px);
+}

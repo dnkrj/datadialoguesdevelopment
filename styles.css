@@ -193,6 +193,10 @@ select {
   background-size: cover;
 }
 
+#bubbleonmyterms:hover {
+  background-image: url("images/windowonmyterms.jpg");
+}
+
 #bubbleseethewholeme {
   mask-image: url("images/bubbleseethewholeme.svg");
   -webkit-mask-image: url("images/bubbleseethewholeme.svg");
@@ -211,6 +215,10 @@ select {
   background: var(--givemefairaccess-color);
   background-image: url("images/gradientgivemefairaccess.jpg");
   background-size: cover;
+}
+
+#bubblegivemefairaccess:hover {
+  background-image: url("images/windowgivemefairaccess.jpg");
 }
 
 #bubblewinbackmytrust {
