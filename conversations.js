@@ -20,6 +20,15 @@ document.getElementById("buttontogglesound").addEventListener("click", () => {
 
 document.getElementById("buttonskipconversation").addEventListener("click", endconversation, false);
 
+let observer = new IntersectionObserver(
+		(entries, observer) => {
+			entries.forEach(entry => {
+		    entry.target.classList.toggle("fade", !entry.isIntersecting)
+		  });
+		}, {
+  		rootMargin: "-30% 0 -200px 0",
+		});
+
 let firstChoice = true;
 
 function fadeOutAudio(audio){
@@ -78,6 +87,7 @@ let showMessage = (i) => {
 		li.classList.add("choice");
 	} else {
 		li.appendChild(document.createTextNode(message.text));
+		observer.observe(li);
 	}
 	li.classList.add(message.type || "sent");
 	ol.appendChild(li);
@@ -105,8 +115,6 @@ let showMessage = (i) => {
 			endconversation();
 		}, 3000);
 	};
-
-	[...ol.querySelectorAll('#messages li:not(.choice')].slice(0, -3).forEach(e => e.classList.add("fade"))
 }
 
 showMessage(0)
