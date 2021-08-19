@@ -173,6 +173,11 @@ article > section li p {
   padding: 30px;
   margin-left: -30px;
   margin-right: -30px;
+  opacity: 0;
+}
+
+article > section li p.visible {
+  animation: fadeinup 1s ease-in forwards;
 }
 
 article > nav {

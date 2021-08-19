@@ -29,6 +29,19 @@ let observer = new IntersectionObserver(
   		rootMargin: "-30% 0 -200px 0",
 		});
 
+let sectionObserver = new IntersectionObserver(
+		(entries, observer) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add("visible");
+				}
+		  });
+		});
+
+document.querySelectorAll("article > section li p").forEach((p) => {
+	sectionObserver.observe(p);
+})
+
 let firstChoice = true;
 
 function fadeOutAudio(audio){
