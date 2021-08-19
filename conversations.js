@@ -26,7 +26,7 @@ let observer = new IntersectionObserver(
 		    entry.target.classList.toggle("fade", !entry.isIntersecting)
 		  });
 		}, {
-  		rootMargin: "-30% 0 -200px 0",
+  		rootMargin: "-30% 0px -200px 0px",
 		});
 
 let sectionObserver = new IntersectionObserver(
