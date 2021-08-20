@@ -128,6 +128,8 @@ let showMessage = (i) => {
 			endconversation();
 		}, 3000);
 	};
+
+	[...ol.querySelectorAll('#messages li:not(.choice')].slice(0, -3).forEach(e => e.classList.add("fade"))
 }
 
 showMessage(0)
