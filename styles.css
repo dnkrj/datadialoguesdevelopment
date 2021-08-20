@@ -132,6 +132,11 @@ body:not([data-filter=""]) #buttonfilter {
   width: 281px;
 }
 
+#buttonback:hover,
+#buttonback:focus {
+  width: 187px;
+}
+
 #buttondownload:hover,
 #buttondownload:focus {
   width: 195px;
@@ -193,6 +198,8 @@ select {
   background-size: cover;
 }
 
+a:hover > #bubbleonmyterms,
+a:focus > #bubbleonmyterms,
 #bubbleonmyterms:hover {
   background-image: url("images/windowonmyterms.jpg");
 }
@@ -205,6 +212,8 @@ select {
   background-size: cover;
 }
 
+a:hover > #bubbleseethewholeme,
+a:focus > #bubbleseethewholeme,
 #bubbleseethewholeme:hover {
   background-image: url("images/windowseethewholeme.jpg");
 }
@@ -217,6 +226,8 @@ select {
   background-size: cover;
 }
 
+a:hover > #bubblegivemefairaccess,
+a:focus > #bubblegivemefairaccess,
 #bubblegivemefairaccess:hover {
   background-image: url("images/windowgivemefairaccess.jpg");
 }
@@ -229,6 +240,8 @@ select {
   background-size: cover;
 }
 
+a:hover > #bubblewinbackmytrust,
+a:focus > #bubblewinbackmytrust,
 #bubblewinbackmytrust:hover {
   background-image: url("images/windowwinbackmytrust.jpg");
 }
