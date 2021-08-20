@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
   }
 });
 
-if(sessionStorage.getItem('doneexplore')) {
+if(localStorage.getItem('doneexplore')) {
   window.addEventListener('load', () => {
     document.body.classList.add("doneenter");
     document.body.classList.add("doneexplore");
@@ -32,7 +32,7 @@ document.getElementById("buttonenter").addEventListener("click", () => {
 document.getElementById("buttonexplore").addEventListener("click", () => {
   document.body.classList.add("doneexplore");
   setTimeout(() => document.querySelector("section").remove(), 500);
-  sessionStorage.setItem('doneexplore', 'doneexplore');
+  localStorage.setItem('doneexplore', 'doneexplore');
 }, false);
 
 document.getElementById("buttontogglesound").addEventListener("click", () => {
