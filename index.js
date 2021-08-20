@@ -7,6 +7,16 @@ window.addEventListener('load', () => {
   }
 });
 
+let toggleSound = (mute) => {
+  document.querySelectorAll("audio").forEach(audio => audio.volume = mute ? 0 : 1);
+  document.getElementById("buttontogglesound").classList.toggle('muted', mute);
+  if (mute) {
+    localStorage.setItem('muted', 'muted');
+  } else {
+    localStorage.removeItem('muted');
+  }
+}
+
 if(localStorage.getItem('doneexplore')) {
   window.addEventListener('load', () => {
     document.body.classList.add("doneenter");
@@ -14,12 +24,17 @@ if(localStorage.getItem('doneexplore')) {
     document.querySelector("header").remove();
     document.querySelector("section").remove();
     document.querySelector("audio").play().catch(() => {
-      document.querySelector("audio").volume = 0;
-      document.getElementById("buttontogglesound").classList.add('muted');
+      toggleSound(true);
       document.getElementById("buttontogglesound").addEventListener("click", () => {
         document.querySelector("audio").play();
       }, false);
     });
+  });
+}
+
+if(localStorage.getItem('muted')) {
+  window.addEventListener('load', () => {
+    toggleSound(true);
   });
 }
 
@@ -36,8 +51,7 @@ document.getElementById("buttonexplore").addEventListener("click", () => {
 }, false);
 
 document.getElementById("buttontogglesound").addEventListener("click", () => {
-  document.querySelector("audio").volume = document.querySelector("audio").volume ? 0 : 1;
-  document.getElementById("buttontogglesound").classList.toggle('muted');
+  toggleSound(document.querySelector("audio").volume);
 }, false);
 
 document.getElementById("buttontoggleframework").addEventListener("click", () => {

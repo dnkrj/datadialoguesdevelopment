@@ -9,13 +9,28 @@ window.addEventListener('load', () => {
   }
 });
 
+let toggleSound = (mute) => {
+  document.querySelectorAll("audio").forEach(audio => audio.volume = mute ? 0 : 1);
+  document.getElementById("buttontogglesound").classList.toggle('muted', mute);
+  if (mute) {
+    localStorage.setItem('muted', 'muted');
+  } else {
+    localStorage.removeItem('muted');
+  }
+}
+
 if(localStorage.getItem("canskip")) {
 	document.body.classList.add("canskip");
 }
 
+if(localStorage.getItem('muted')) {
+  window.addEventListener('load', () => {
+    toggleSound(true);
+  });
+}
+
 document.getElementById("buttontogglesound").addEventListener("click", () => {
-  document.querySelectorAll("audio").forEach(a => a.volume = a.volume ? 0 : 1);
-  document.getElementById("buttontogglesound").classList.toggle('muted');
+  toggleSound(document.querySelector("audio").volume);
 }, false);
 
 document.getElementById("buttonskipconversation").addEventListener("click", endconversation, false);
