@@ -181,6 +181,12 @@ select {
   background-size: cover;
 }
 
+a:hover > #bubbletakemebythehand,
+a:focus > #bubbletakemebythehand,
+#bubbletakemebythehand:hover {
+  background-image: url("images/windowtakemebythehand.jpg");
+}
+
 #bubblesharingiscaring {
   mask-image: url("images/bubblesharingiscaring.svg");
   -webkit-mask-image: url("images/bubblesharingiscaring.svg");
