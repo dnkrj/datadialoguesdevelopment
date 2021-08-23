@@ -80,7 +80,9 @@ function endconversation() {
 		setTimeout(e.remove, 300);
 	});
 	document.body.classList.remove("inprogress");
-	zenscroll.intoView(document.querySelector("article section p:first-child"), 2000);
+	zenscroll.intoView(
+			document.querySelector("article section p:first-child"),
+			matchMedia('(prefers-reduced-motion)').matches ? 0 : 2000);
 	document.querySelectorAll("audio").forEach(fadeOutAudio);
 	setTimeout(document.getElementById("buttons").remove, 300);
 	localStorage.setItem("canskip", "canskip");
@@ -120,7 +122,7 @@ let showMessage = (i) => {
 	li.classList.add(message.type || "sent");
 	ol.appendChild(li);
 
-	zenscroll.intoView(li, 1000);
+	zenscroll.intoView(li, matchMedia('(prefers-reduced-motion)').matches ? 0 : 1000);
 
 	if (message.audio) {
 		audio = document.querySelector(`audio#${message.audio}`);

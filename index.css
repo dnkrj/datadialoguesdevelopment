@@ -5,7 +5,6 @@ body {
   width: 100vw;
   min-height: 100vh;
   margin: 0;
-  transition: all 2s;
 }
 
 header, section, nav {
@@ -92,7 +91,6 @@ body:not(.doneenter) section {
   width: 60vh;
   position: absolute;
   padding: 0;
-  perspective: 100px;
 }
 
 #framework {
@@ -102,7 +100,6 @@ body:not(.doneenter) section {
   padding: 0;
   pointer-events: none;
   opacity: 0;
-  transition: opacity 0.5s;
 }
 
 body.doneexplore.showframework #framework {
@@ -120,7 +117,7 @@ nav li {
   text-align: center;
   padding: 30px;
   box-sizing: border-box;
-  transition: all 1s;
+  transition: all 0.001s;
 
   mask-size: contain;
   -webkit-mask-size: contain;
@@ -222,7 +219,6 @@ body.doneenter.doneexplore #bubblegivemefairaccess:hover,
 body.doneenter.doneexplore a:focus #bubblegivemefairaccess,
 body.doneenter.doneexplore #bubblewinbackmytrust:hover,
 body.doneenter.doneexplore a:focus #bubblewinbackmytrust {
-  transform: translate3d(-4%, -5%, 5px) scale(1.05);
   z-index: 1;
 }
 
@@ -483,5 +479,40 @@ body.doneexplore #buttons #buttondownload {
 
   header, section {
     padding-top: calc(600px - 100vw);
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  body {
+    transition: all 2s;
+  }
+
+  #map {
+    perspective: 100px;
+  }
+
+  #framework {
+    transition: opacity 0.5s;
+  }
+
+  nav li {
+    transition: all 1s;
+  }
+
+  body.doneenter.doneexplore #bubbleisthereanappforthat:hover,
+  body.doneenter.doneexplore a:focus #bubbleisthereanappforthat,
+  body.doneenter.doneexplore #bubbletakemebythehand:hover,
+  body.doneenter.doneexplore a:focus #bubbletakemebythehand,
+  body.doneenter.doneexplore #bubblesharingiscaring:hover,
+  body.doneenter.doneexplore a:focus #bubblesharingiscaring,
+  body.doneenter.doneexplore #bubbleonmyterms:hover,
+  body.doneenter.doneexplore a:focus #bubbleonmyterms,
+  body.doneenter.doneexplore #bubbleseethewholeme:hover,
+  body.doneenter.doneexplore a:focus #bubbleseethewholeme,
+  body.doneenter.doneexplore #bubblegivemefairaccess:hover,
+  body.doneenter.doneexplore a:focus #bubblegivemefairaccess,
+  body.doneenter.doneexplore #bubblewinbackmytrust:hover,
+  body.doneenter.doneexplore a:focus #bubblewinbackmytrust {
+    transform: translate3d(-4%, -5%, 5px) scale(1.05);
   }
 }
