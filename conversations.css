@@ -17,6 +17,7 @@ body {
   width: 100vw;
 
   object-fit: cover;
+  animation: fadein 2s backwards;
 }
 
 #backgroundcontainer img:first-child {
@@ -225,6 +226,10 @@ body:not(.canskip) #buttonskipconversation {
 body:not(.inprogress) #buttons {
   animation: fadeout 0.3s forwards;
   pointer-events: none;
+}
+
+#shade {
+  transition: opacity 0.3s ease;
 }
 
 @media only screen and (max-width: 1000px) {

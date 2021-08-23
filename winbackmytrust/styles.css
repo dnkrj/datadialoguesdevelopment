@@ -4,7 +4,3 @@
   --text-color: var(--winbackmytrust-text-color);
   --conversation-color: var(--winbackmytrust-conversation-color);
 }
-
-body {
-  background-image: url('../images/backgroundwinbackmytrust.jpg');
-}

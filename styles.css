@@ -265,6 +265,22 @@ a:focus > #bubblewinbackmytrust,
   margin: 10px;
 }
 
+#shade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  pointer-events: none;
+
+  transition: opacity 2s ease;
+  opacity: 0;
+
+  background-image: url("images/background.jpg");
+  background-size: cover;
+}
+
 @media only screen and (max-width: 1000px) {
   #buttons {
     flex-direction: column;

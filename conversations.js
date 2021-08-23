@@ -171,3 +171,16 @@ function updateP(event){
   clientY = event.clientY;
 }
 addEventListener('mousemove', updateP, false);
+
+let shade = document.getElementById('shade');
+document.querySelectorAll('a[data-background]').forEach((a) => {
+	a.addEventListener('click', (e) => {
+    shade.style.background = `#${a.dataset.background}`;
+    shade.style.opacity = 1;
+    e.preventDefault();
+    setTimeout(() => {
+      window.location = a.href;
+      shade.style.opacity = 0;
+    }, 300)
+	}, false)
+});

@@ -5,6 +5,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   margin: 0;
+
 }
 
 header, section, nav {
@@ -483,10 +484,6 @@ body.doneexplore #buttons #buttondownload {
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  body {
-    transition: all 2s;
-  }
-
   #map {
     perspective: 100px;
   }

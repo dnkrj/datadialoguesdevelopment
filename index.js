@@ -62,9 +62,16 @@ document.querySelector('#buttonfilter select').addEventListener('change', (event
   document.body.dataset.filter = event.target.value;
 });
 
-document.querySelectorAll('li a').forEach((e) => {
-	e.addEventListener('click', (e) => {
-		document.body.classList.add('transitioning');
+let shade = document.getElementById('shade');
+document.querySelectorAll('a[data-background]').forEach((a) => {
+	a.addEventListener('click', (e) => {
+    shade.style.background = `#${a.dataset.background}`;
+    shade.style.opacity = 1;
+    e.preventDefault();
+    setTimeout(() => {
+      window.location = a.href;
+      shade.style.opacity = 0;
+    }, 2000)
 	}, false)
 });
 
