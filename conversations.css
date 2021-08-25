@@ -168,6 +168,14 @@ article > section li p {
   opacity: 0;
 }
 
+article > section li:nth-child(odd) p {
+  border-bottom-right-radius: 0;
+}
+
+article > section li:nth-child(even) p {
+  border-bottom-left-radius: 0;
+}
+
 article > section li p.visible {
   animation: fadeinup 1s ease-in forwards;
 }
