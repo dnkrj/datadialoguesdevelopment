@@ -342,40 +342,73 @@ body.doneexplore #buttons #buttondownload {
 }
 
 @media only screen and (min-width: 1001px) {
-  body.doneexplore:not([data-filter=""]) #bubbleisthereanappforthat,
+  body.doneexplore:not([data-filter=""]) #bubbleisthereanappforthat {
+    left: -7%;
+    top: 76%;
+  }
+
   body.doneexplore:not(.showframework) #bubbleisthereanappforthat {
     left: -15%;
     top: 84%;
   }
 
-  body.doneexplore:not([data-filter=""]) #bubbletakemebythehand,
+  body.doneexplore:not([data-filter=""]) #bubbletakemebythehand {
+    left: 71%;
+    top: 34%;
+  }
+
   body.doneexplore:not(.showframework) #bubbletakemebythehand {
     left: 80%;
     top: 34%;
   }
 
-  body.doneexplore:not([data-filter=""]) #bubblesharingiscaring,
+  body.doneexplore:not([data-filter=""]) #bubblesharingiscaring {
+    left: 16%;
+    top: -10%;
+  }
+
   body.doneexplore:not(.showframework) #bubblesharingiscaring {
     left: 16%;
     top: -20%;
   }
 
-  body.doneexplore:not([data-filter=""]) #bubbleonmyterms,
+  body.doneexplore:not([data-filter=""]) #bubbleonmyterms {
+    left: 31%;
+    top: 75%;
+  }
+
   body.doneexplore:not(.showframework) #bubbleonmyterms {
     left: 31%;
     top: 85%;
   }
 
-  body.doneexplore:not([data-filter=""]) #bubblegivemefairaccess,
+  body.doneexplore:not([data-filter=""]) #bubblegivemefairaccess {
+    left: -8%;
+    top: 32%;
+  }
+
   body.doneexplore:not(.showframework) #bubblegivemefairaccess {
     left: -18%;
     top: 32%;
   }
 
-  body.doneexplore:not([data-filter=""]) #bubblewinbackmytrust,
+  body.doneexplore:not([data-filter=""]) #bubblewinbackmytrust {
+    left: 82%;
+    top: 65%;
+  }
+
   body.doneexplore:not(.showframework) #bubblewinbackmytrust {
     left: 80%;
     top: 73%;
+  }
+
+  #filterexplaination {
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
+  body.doneexplore:not([data-filter=""]) #filterexplaination {
+    opacity: 1;
   }
 
   body.doneexplore[data-filter="youngpeople"] #bubblegivemefairaccess,
