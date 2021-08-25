@@ -240,6 +240,12 @@ body:not(.inprogress) #buttons {
   transition: opacity 0.3s ease;
 }
 
+@media screen and (-ms-high-contrast: active) {
+  #backgroundcontainer img:not(:first-child) {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   #backgroundcontainer img:not(:first-child) {
     display: none;
