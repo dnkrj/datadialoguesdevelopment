@@ -155,8 +155,8 @@ select {
   background: transparent;
   color: currentcolor;
   border: none;
-  -webkit-appearance: button;
-  appearance: button;
+  -webkit-appearance: none;
+  appearance: none;
   outline: none;
   font: inherit;
   margin: 0;
