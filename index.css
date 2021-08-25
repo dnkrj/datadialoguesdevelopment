@@ -341,6 +341,10 @@ body.doneexplore #buttons #buttondownload {
   animation-delay: 1.5s;
 }
 
+body.doneexplore #buttons #buttonreplayintro {
+  animation-delay: 1.75s;
+}
+
 @media only screen and (min-width: 1001px) {
   body.doneexplore:not([data-filter=""]) #bubbleisthereanappforthat {
     left: -7%;

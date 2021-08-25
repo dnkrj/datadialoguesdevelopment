@@ -50,6 +50,11 @@ document.getElementById("buttonexplore").addEventListener("click", () => {
   localStorage.setItem('doneexplore', 'doneexplore');
 }, false);
 
+document.getElementById("buttonreplayintro").addEventListener("click", () => {
+  localStorage.removeItem('doneexplore');
+  location.reload();
+}, false);
+
 document.getElementById("buttontogglesound").addEventListener("click", () => {
   toggleSound(document.querySelector("audio").volume);
 }, false);

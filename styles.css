@@ -131,6 +131,11 @@ body:not([data-filter=""]) #buttonfilter {
   width: 281px;
 }
 
+#buttonreplayintro:hover,
+#buttonreplayintro:focus {
+  width: 212px;
+}
+
 #buttonback:hover,
 #buttonback:focus {
   width: 187px;
