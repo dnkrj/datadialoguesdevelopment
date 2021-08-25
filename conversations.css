@@ -241,6 +241,10 @@ body:not(.inprogress) #buttons {
 }
 
 @media only screen and (max-width: 1000px) {
+  #backgroundcontainer img:not(:first-child) {
+    display: none;
+  }
+
   #buttons {
     flex-direction: column-reverse;
     top: 30px;
