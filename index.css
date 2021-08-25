@@ -397,7 +397,7 @@ body.doneexplore #buttons #buttonreplayintro {
   }
 
   body.doneexplore:not([data-filter=""]) #bubblewinbackmytrust {
-    left: 82%;
+    left: 72%;
     top: 65%;
   }
 
