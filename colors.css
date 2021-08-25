@@ -1,8 +1,8 @@
 :root {
   --isthereanappforthat-color: #47E97D;
-  --isthereanappforthat-background-color: #97ffbb;
+  --isthereanappforthat-background-color: #002d54;
   --isthereanappforthat-text-color: white;
-  --isthereanappforthat-conversation-color: black;
+  --isthereanappforthat-conversation-color: #f9fffc;
   --takemebythehand-color: #62CEE2;
   --takemebythehand-background-color: #682c44;
   --takemebythehand-text-color: black;
@@ -24,7 +24,7 @@
   --givemefairaccess-text-color: black;
   --givemefairaccess-conversation-color: #002d54;
   --winbackmytrust-color: #D80015;
-  --winbackmytrust-background-color: #fad8db;
+  --winbackmytrust-background-color: #002d54;
   --winbackmytrust-text-color: white;
-  --winbackmytrust-conversation-color: #6a030c;
+  --winbackmytrust-conversation-color: #fff8f9;
 }

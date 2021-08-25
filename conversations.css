@@ -40,6 +40,10 @@ body {
   transform: translate3d(-1.6%, -1.6%, 5px) scale(0.95);
 }
 
+#backgroundcontainer img:nth-child(6) {
+  transform: translate3d(-1.9%, -1.9%, 5px) scale(0.94);
+}
+
 
 #conversation {
   min-height: 100vh;

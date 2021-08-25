@@ -171,6 +171,11 @@ select {
   background-size: cover;
 }
 
+a:hover > #bubbleisthereanappforthat,
+a:focus > #bubbleisthereanappforthat,
+#bubbleisthereanappforthat:hover {
+  background-image: url("images/windowisthereanappforthat.jpg");
+}
 
 #bubbletakemebythehand {
   mask-image: url("images/bubbletakemebythehand.svg");

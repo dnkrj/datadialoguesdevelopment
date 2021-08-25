@@ -141,9 +141,9 @@ body.doneexplore nav a {
   color: white;
 }
 
-body.doneexplore nav #bubblegivemefairaccess,
-body.doneexplore nav #bubbleisthereanappforthat,
-body.doneexplore nav #bubbletakemebythehand {
+#bubblegivemefairaccess,
+#bubbleisthereanappforthat,
+#bubbletakemebythehand {
   color: black;
 }
 
