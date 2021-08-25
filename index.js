@@ -60,6 +60,8 @@ document.getElementById("buttontoggleframework").addEventListener("click", () =>
 
 document.querySelector('#buttonfilter select').addEventListener('change', (event) => {
   document.body.dataset.filter = event.target.value;
+  document.querySelector('#buttonfilter select option').textContent =
+      event.target.value ? "Unfilter by group" : "Filter by group";
 });
 
 let shade = document.getElementById('shade');
