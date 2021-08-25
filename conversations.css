@@ -252,9 +252,7 @@ body:not(.inprogress) #buttons {
   #backgroundcontainer {
     perspective: 100px;
   }
-}
 
-@media screen and (prefers-reduced-motion: no-preference) {
   #messages li.choice:hover {
     transform: translateY(-2%) scale(1.1);
   }

@@ -194,6 +194,12 @@ a:focus > #bubbletakemebythehand,
   background-size: cover;
 }
 
+a:hover > #bubblesharingiscaring,
+a:focus > #bubblesharingiscaring,
+#bubblesharingiscaring:hover {
+  background-image: url("images/windowsharingiscaring.jpg");
+}
+
 
 #bubbleonmyterms {
   mask-image: url("images/bubbleonmyterms.svg");
