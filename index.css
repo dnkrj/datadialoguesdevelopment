@@ -530,7 +530,7 @@ body.doneexplore #buttons #buttonreplayintro {
   }
 
   nav li {
-    transition: all 3s;
+    transition: all 3s ease;
   }
 
   body.doneenter.doneexplore nav li {
