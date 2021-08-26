@@ -1,9 +1,9 @@
 body {
   background: #EBEBEB;
   width: 100vw;
+  overflow-x: hidden;
   min-height: 100vh;
   margin: 0;
-
 }
 
 header, section, nav {
@@ -482,9 +482,8 @@ body.doneexplore #buttons #buttonreplayintro {
     display: block;
   }
 
-  body:not(.doneexplore) nav {
-    position: fixed;
-    bottom: 0;
+  body.doneexplore nav {
+    position: relative;
   }
 
   #navheader {
