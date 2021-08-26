@@ -54,7 +54,7 @@ body {
   width: 100vw;
   max-width: 1000px;
   margin: 0 0 0 auto;
-  padding: 250px max(30px, 9vw);
+  padding: 250px max(30px, 9vw) min(250px, 20vw);
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;

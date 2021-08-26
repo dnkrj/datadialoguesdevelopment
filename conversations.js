@@ -1,4 +1,4 @@
-zenscroll.setup(0, 250)
+zenscroll.setup(0, 0)
 
 window.addEventListener('load', () => {
   document.querySelector("audio").volume = 0;
@@ -122,7 +122,7 @@ let showMessage = (i) => {
 	li.classList.add(message.type || "sent");
 	ol.appendChild(li);
 
-	zenscroll.intoView(li, matchMedia('(prefers-reduced-motion)').matches ? 0 : 1000);
+	zenscroll.intoView(document.getElementById('scrolltarget'), matchMedia('(prefers-reduced-motion)').matches ? 0 : 1000);
 
 	if (message.audio) {
 		audio = document.querySelector(`audio#${message.audio}`);
