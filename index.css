@@ -1,7 +1,5 @@
 body {
   background: #EBEBEB;
-  background-image: url("images/background.jpg");
-  background-size: cover;
   width: 100vw;
   min-height: 100vh;
   margin: 0;
@@ -9,14 +7,21 @@ body {
 }
 
 header, section, nav {
-  position: fixed;
+  position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
 
-  overflow: scroll;
+  overflow-x: hidden;
+
+  min-height: 100vh;
+  box-sizing: border-box;
   padding: 30px;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
 }
 
 header, section {
@@ -477,6 +482,11 @@ body.doneexplore #buttons #buttonreplayintro {
     display: block;
   }
 
+  body:not(.doneexplore) nav {
+    position: fixed;
+    bottom: 0;
+  }
+
   #navheader {
     position: relative;
     padding: 0;
@@ -513,10 +523,6 @@ body.doneexplore #buttons #buttonreplayintro {
 
   #frameworkexplanation {
     display: none;
-  }
-
-  header, section {
-    padding-top: calc(600px - 100vw);
   }
 }
 
