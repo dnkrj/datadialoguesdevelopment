@@ -426,9 +426,7 @@ body.doneexplore #buttons #buttonreplayintro {
   body.doneexplore[data-filter="youngpeople"] #bubbletakemebythehand,
   body.doneexplore[data-filter="olderpeople"] #bubbleseethewholeme,
   body.doneexplore[data-filter="olderpeople"] #bubbleisthereanappforthat,
-  body.doneexplore[data-filter="lgbtqgroups"] #bubblegivemefairaccess,
-  body.doneexplore[data-filter="peopleonbenefits"] #bubbleisthereanappforthat,
-  body.doneexplore[data-filter="peopleonbenefits"] #bubblesharingiscaring {
+  body.doneexplore[data-filter="lgbtqgroups"] #bubblegivemefairaccess {
     transform: scale(0.5);
   }
 
@@ -443,8 +441,6 @@ body.doneexplore #buttons #buttonreplayintro {
   body.doneexplore[data-filter="peoplewithamedicalcondition"] #bubbletakemebythehand,
   body.doneexplore[data-filter="minoritygroups"] #bubbleseethewholeme,
   body.doneexplore[data-filter="minoritygroups"] #bubbleisthereanappforthat,
-  body.doneexplore[data-filter="peopleonbenefits"] #bubbleseethewholeme,
-  body.doneexplore[data-filter="peopleonbenefits"] #bubblesharingiscaring,
   body.doneexplore[data-filter="generalpublic"] #bubblegivemefairaccess,
   body.doneexplore[data-filter="generalpublic"] #bubblewinbackmytrust {
     transform: scale(0.75);
@@ -473,8 +469,7 @@ body.doneexplore #buttons #buttonreplayintro {
   body.doneexplore[data-filter="lgbtqgroups"] #bubbleseethewholeme,
   body.doneexplore[data-filter="lgbtqgroups"] #bubbletakemebythehand,
   body.doneexplore[data-filter="lgbtqgroups"] #bubblesharingiscaring,
-  body.doneexplore[data-filter="minoritygroups"] #bubblewinbackmytrust,
-  body.doneexplore[data-filter="peopleonbenefits"] #bubblewinbackmytrust {
+  body.doneexplore[data-filter="minoritygroups"] #bubblewinbackmytrust {
     transform: scale(1.5);
   }
 }
