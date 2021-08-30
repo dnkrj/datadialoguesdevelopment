@@ -125,6 +125,8 @@ nav li {
   box-sizing: border-box;
   transition: all 0.001s;
 
+  animation: fadein 2s ease 0.75s backwards !important;
+
   mask-size: contain;
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
@@ -539,7 +541,7 @@ body.doneexplore #buttons #buttonreplayintro {
   }
 
   body.doneenter.doneexplore nav li {
-    transition: all 1s;
+    transition: all 1s ease;
   }
 
   body.doneenter.doneexplore #bubbleisthereanappforthat:hover,
