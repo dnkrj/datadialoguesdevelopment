@@ -8,7 +8,7 @@ ol, ul {
 }
 
 h1 {
-  color: #002E56;
+  color: #0f294a;
   font-family: "Averta-Regular";
   font-size: 48px;
   line-height: 1.4;
@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-  color: #002E56;
+  color: #0f294a;
   font-family: "Averta-Bold";
   font-size: 27px;
   line-height: 1.4;
@@ -24,7 +24,7 @@ h2 {
 }
 
 h3 {
-  color: #002E56;
+  color: #0f294a;
   font-family: "Averta-Bold";
   font-size: 20px;
   line-height: 1.4;
@@ -41,7 +41,7 @@ p {
 
 p em {
   font-family: "Averta-RegularItalic";
-  color: #002E56;
+  color: #0f294a;
   font-style: normal;
 }
 
@@ -51,7 +51,7 @@ a {
 
 button,
 .button {
-  background: #0067C3;
+  background: #3333ff;
   color: white;
   font-family: "Averta-Regular";
   font-size: 18px;
@@ -72,7 +72,7 @@ button:focus,
 .button:hover,
 .button:focus {
   outline: none;
-  background: #002E56;
+  background: #0f294a;
   cursor: pointer;
 }
 
