@@ -11,7 +11,7 @@ let toggleSound = (mute) => {
 }
 
 if(localStorage.getItem('doneexplore')) {
-  document.addEventListener('load', () => {
+  window.addEventListener('load', () => {
     document.body.classList.add("doneenter");
     document.body.classList.add("doneexplore");
     document.querySelector("header").remove();
@@ -26,7 +26,7 @@ if(localStorage.getItem('doneexplore')) {
 }
 
 if(localStorage.getItem('muted')) {
-  document.addEventListener('load', () => {
+  window.addEventListener('load', () => {
     toggleSound(true);
   });
 }
