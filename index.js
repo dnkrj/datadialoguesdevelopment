@@ -1,18 +1,11 @@
-window.addEventListener('load', () => {
-  document.querySelector("audio").volume = 0;
-  if (document.querySelector("audio").volume) {
-    body.classList.add('novolumecontrol');
-  } else {
-    document.querySelector("audio").volume = 1;
-  }
-});
-
 let toggleSound = (mute) => {
   document.querySelectorAll("audio").forEach(audio => audio.volume = mute ? 0 : 1);
   document.getElementById("buttontogglesound").classList.toggle('muted', mute);
   if (mute) {
+    document.querySelector("audio#loop").pause();
     localStorage.setItem('muted', 'muted');
   } else {
+    document.querySelector("audio#loop").play();
     localStorage.removeItem('muted');
   }
 }

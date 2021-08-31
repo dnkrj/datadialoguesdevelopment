@@ -1,20 +1,11 @@
-zenscroll.setup(0, 0)
-
-window.addEventListener('load', () => {
-  document.querySelector("audio").volume = 0;
-  if (document.querySelector("audio").volume) {
-    body.classList.add('novolumecontrol');
-  } else {
-    document.querySelector("audio").volume = 1;
-  }
-});
-
 let toggleSound = (mute) => {
   document.querySelectorAll("audio").forEach(audio => audio.volume = mute ? 0 : 1);
   document.getElementById("buttontogglesound").classList.toggle('muted', mute);
   if (mute) {
+    document.querySelector("audio#loop").pause();
     localStorage.setItem('muted', 'muted');
   } else {
+    document.querySelector("audio#loop").play();
     localStorage.removeItem('muted');
   }
 }
@@ -60,13 +51,9 @@ document.querySelectorAll("article > section li p").forEach((p) => {
 let firstChoice = true;
 
 function fadeOutAudio(audio){
-	if (document.body.classList.contains('novolumecontrol')) {
-		audio.pause();
-		return;
-	}
-
 	if (audio.volume <= 0.01) {
 		audio.volume = 0;
+		audio.pause();
 		return;
 	}
 
