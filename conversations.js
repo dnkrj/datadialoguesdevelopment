@@ -165,9 +165,11 @@ document.querySelectorAll('a[data-background]').forEach((a) => {
     shade.style.background = `#${a.dataset.background}`;
     shade.style.opacity = 1;
     e.preventDefault();
+    window.onpagehide = () => {
+      shade.style.opacity = 0;
+    }
     setTimeout(() => {
       window.location = a.href;
-      shade.style.opacity = 0;
     }, 300)
 	}, false)
 });
