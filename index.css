@@ -162,7 +162,6 @@ nav #navheader,
 
 body.doneexplore nav #navheader {
   display: inline-block;
-  max-width: 400px;
   animation: fadein 2s backwards;
 }
 
@@ -329,6 +328,8 @@ body.doneenter #bubblewinbackmytrust {
   top: 0;
   left: 0;
   padding: 50px;
+  width: 25%;
+  max-width: 400px;
 }
 
 #navheader h2 {
@@ -484,6 +485,8 @@ body.doneexplore #buttons #buttonreplayintro {
   }
 
   #navheader {
+    width: 100%;
+    max-width: 100%;
     position: relative;
     padding: 0;
   }

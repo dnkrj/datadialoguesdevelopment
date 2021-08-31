@@ -35,7 +35,7 @@ body {
 
 #messages {
   box-sizing: border-box;
-  width: 100vw;
+  width: 60vw;
   max-width: 1000px;
   margin: 0 0 0 auto;
   padding: 250px max(30px, 9vw) min(250px, 20vw);
@@ -271,6 +271,10 @@ body:not(.inprogress) #buttons {
 @media only screen and (max-width: 1000px) {
   #backgroundcontainer img:not(:first-child) {
     display: none;
+  }
+
+  #messages {
+    width: 100vw;
   }
 
   #buttons {
