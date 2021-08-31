@@ -2,7 +2,7 @@ body {
   background: #EBEBEB;
   width: 100vw;
   overflow-x: hidden;
-  min-height: 100vh;
+  min-height: 100%;
   margin: 0;
 }
 
